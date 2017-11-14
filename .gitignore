@@ -27,10 +27,13 @@ hs_err_pid*
 
 ### NetBeans ###
 nbproject/private/
+nbproject/
 build/
 nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+manifest.mf
+build.xml
 
 # End of https://www.gitignore.io/api/java,netbeans
