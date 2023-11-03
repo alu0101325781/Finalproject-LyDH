@@ -5,13 +5,17 @@
   <groupId>2048</groupId>
   <artifactId>2048</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>maven-plugin</packaging>
+  <packaging>jar</packaging>
 
   <name>2048</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.projectKey>alu0101325781_Finalproject-LyDH</sonar.projectKey>
+    <sonar.organization>alu0101325781</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    
   </properties>
 
   <dependencies>
@@ -22,10 +26,25 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
-  <build>
-	<sourceDirectory>src</sourceDirectory>
-	</build>
+
+<build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.9.0.2155</version>
+            <executions>
+                <execution>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>sonar</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
   
   <reporting>
       <plugins>

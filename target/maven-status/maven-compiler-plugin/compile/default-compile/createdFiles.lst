@@ -1,8 +1,8 @@
-game\Game.class
-game\Grid.class
-game\Tile.class
-game\Board.class
-game\Window.class
-game\Controls.class
-game\ColorScheme.class
-game\Main.class
+ColorScheme.class
+Main.class
+Controls.class
+Board.class
+Grid.class
+Window.class
+Game.class
+Tile.class
