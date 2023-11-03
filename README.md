@@ -3,8 +3,11 @@
 ## Grupo 03
 
 Francesco Marelli
+
 Enrique Suarez Hernandez
+
 Victor Cánovas Del Pino
+
 Nahia Ganuza Izaguirre
 
 ## Enlace liveshare del codespace
