@@ -1,0 +1,15 @@
+<map id="game.Game" name="game.Game">
+<area shape="rect" id="Node000001" title=" " alt="" coords="235,172,327,199"/>
+<area shape="rect" id="Node000002" href="$classgame_1_1_color_scheme.html" title=" " alt="" coords="5,81,141,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,114,165,146,235,170,233,175,163,150,103,119"/>
+<area shape="rect" id="Node000003" href="$classgame_1_1_window.html" title=" " alt="" coords="165,81,269,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,121,239,146,264,170,260,173,235,150,222,123"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="185,5,249,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="220,47,220,81,214,81,214,47"/>
+<area shape="rect" id="Node000005" href="$classgame_1_1_controls.html" title=" " alt="" coords="292,81,398,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="330,122,292,173,288,170,325,119"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="300,5,390,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="348,47,348,81,342,81,342,47"/>
+<area shape="rect" id="Node000007" href="$classgame_1_1_board.html" title=" " alt="" coords="422,81,513,108"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="445,120,400,150,364,165,328,176,327,171,362,160,397,146,442,115"/>
+</map>
