@@ -24,7 +24,7 @@
   </dependencies>
   
   <build>
-	<sourceDirectory>src/game</sourceDirectory>
+	<sourceDirectory>src</sourceDirectory>
 	</build>
   
   <reporting>
