@@ -4,7 +4,7 @@
 
 Francesco Marelli
 
-Enrique Suarez Hernandez
+Enrique Suárez Hernández
 
 Victor Cánovas Del Pino
 
