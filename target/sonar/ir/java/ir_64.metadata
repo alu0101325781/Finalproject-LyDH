@@ -1,0 +1,13 @@
+Grid#drawScoreBoard(Ljava/awt/Graphics2D;)V
+java.awt.Color#instance-init#
+java.lang.String#valueOf(I)Ljava/lang/String;
+java.awt.Color#<init>(I)V
+java.awt.Font#<init>(Ljava/lang/String;II)V
+java.awt.Font#instance-init#
+==
+getScore Board#getScore()I
+setFont java.awt.Graphics#setFont(Ljava/awt/Font;)V
+getWidth Window#getWidth()I
+drawString java.awt.Graphics2D#drawString(Ljava/lang/String;II)V
+setColor java.awt.Graphics#setColor(Ljava/awt/Color;)V
+fillRoundRect java.awt.Graphics#fillRoundRect(IIIIII)V

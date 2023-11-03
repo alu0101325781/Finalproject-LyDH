@@ -1,0 +1,5 @@
+Board#moveLeft()V
+Board#addEmptyTilesLast(Ljava/util/List;)Ljava/util/List;
+Board#removeEmptyTilesRows(I)Ljava/util/List;
+Board#setRowToBoard(Ljava/util/List;I)Ljava/util/List;
+Board#mergeTiles(Ljava/util/List;)Ljava/util/List;

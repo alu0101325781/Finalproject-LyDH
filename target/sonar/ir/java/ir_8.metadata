@@ -1,0 +1,5 @@
+Board#start()V
+Board#genInitTiles()V
+Board#initialize()V
+==
+bind Controls#bind()V

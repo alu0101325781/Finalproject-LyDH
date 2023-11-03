@@ -1,0 +1,4 @@
+Board#isMovePossible()Z
+==
+getValue Tile#getValue()I
+getTileAt Board#getTileAt(II)LTile;

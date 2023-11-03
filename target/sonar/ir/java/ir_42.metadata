@@ -1,0 +1,3 @@
+Controls#bind()V
+==
+addKeyListener java.awt.Component#addKeyListener(Ljava/awt/event/KeyListener;)V

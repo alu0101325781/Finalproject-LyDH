@@ -1,8 +1,8 @@
-/workspaces/Finalproject-LyDH/src/Controls.java
-/workspaces/Finalproject-LyDH/src/Main.java
-/workspaces/Finalproject-LyDH/src/Window.java
-/workspaces/Finalproject-LyDH/src/Board.java
-/workspaces/Finalproject-LyDH/src/ColorScheme.java
-/workspaces/Finalproject-LyDH/src/Grid.java
-/workspaces/Finalproject-LyDH/src/Game.java
-/workspaces/Finalproject-LyDH/src/Tile.java
+/workspaces/Finalproject-LyDH/src/main/java/ColorScheme.java
+/workspaces/Finalproject-LyDH/src/main/java/Game.java
+/workspaces/Finalproject-LyDH/src/main/java/Controls.java
+/workspaces/Finalproject-LyDH/src/main/java/Board.java
+/workspaces/Finalproject-LyDH/src/main/java/Tile.java
+/workspaces/Finalproject-LyDH/src/main/java/Grid.java
+/workspaces/Finalproject-LyDH/src/main/java/Main.java
+/workspaces/Finalproject-LyDH/src/main/java/Window.java

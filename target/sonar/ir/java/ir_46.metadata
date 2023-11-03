@@ -1,0 +1,6 @@
+ColorScheme#initBackrounds()V
+java.awt.Color#instance-init#
+java.awt.Color#<init>(I)V
+java.awt.Color#<init>(IIII)V
+==
+put java.util.HashMap#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

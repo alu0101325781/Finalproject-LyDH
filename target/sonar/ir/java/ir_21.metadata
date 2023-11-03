@@ -1,0 +1,7 @@
+Board#removeEmptyTilesCols(I)Ljava/util/List;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+==
+isEmpty Tile#isEmpty()Z
+add java.util.List#add(Ljava/lang/Object;)Z
+getTileAt Board#getTileAt(II)LTile;
