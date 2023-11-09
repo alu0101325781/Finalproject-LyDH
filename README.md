@@ -22,3 +22,7 @@ Victor Cánovas Del Pino
 Nahia Ganuza Izaguirre
 
 ![screenshot](screen.png)
+
+## Métricas de Sonarcloud
+
+[![SonarCloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=alert_status)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
