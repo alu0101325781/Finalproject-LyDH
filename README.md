@@ -8,6 +8,9 @@ Cirulli creó el juego durante un fin de semana8​ como prueba para determinar 
 Es jugado en una cuadrícula gris simple de 4x4 con baldosas de distintos colores y con un número en su centro.
 Si dos baldosas con el mismo número "colisionan" durante un movimiento, se combinarán en una nueva baldosa, cuyo número será el equivalente a la suma de los números de las dos baldosas originales (es decir, si dos baldosas con el número 4 colisionan, se combinarán en una baldosa con el número 8).
 
+## Enlace a SonarCloud
+https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH
+
 ## Grupo 03
 
 Francesco Marelli
