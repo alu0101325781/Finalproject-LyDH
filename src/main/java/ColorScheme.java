@@ -1,3 +1,6 @@
+package main.java;
+
+
 import java.awt.Color;
 import java.util.HashMap;
 

@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -286,6 +288,9 @@ public class Board {
 			int row;
 			int col;
 			int value = Math.random() < 0.9 ? 2 : 4;
+			// SecureRandom value = new SecureRandom(); // Compliant for security-sensitive use cases
+			// byte bytes[] = new byte[20];
+			// value.nextBytes(bytes);
 			do {
 				row = (int) (Math.random () * 4);
 				col = (int) (Math.random () * 4);
