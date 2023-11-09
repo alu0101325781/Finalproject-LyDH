@@ -11,6 +11,7 @@ import javax.swing.border.Border;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
+import javax.swing.WindowConstants;
 
 /**
  * Window
@@ -32,7 +33,7 @@ public class Window extends JFrame {
 		super(title); // Window title
 
 		this.setLayout( new BorderLayout());
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // close window to exit
+		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // close window to exit
 		this.setSize(this.width, this.height);
 		this.setLocationRelativeTo(null); // centering
 
