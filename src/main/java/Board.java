@@ -45,7 +45,6 @@ public class Board {
 		Game.CONTROLS.bind();
 		initialize();
 		genInitTiles();
-		//show();
 	}
 
 	public int getSize() {
