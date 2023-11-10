@@ -1,9 +1,0 @@
-Grid#paintComponent(Ljava/awt/Graphics;)V
-Grid#drawTitle(Ljava/awt/Graphics;)V
-Grid#drawScoreBoard(Ljava/awt/Graphics2D;)V
-Grid#drawBoard(Ljava/awt/Graphics;)V
-Grid#drawBackground(Ljava/awt/Graphics;)V
-==
-setRenderingHint java.awt.Graphics2D#setRenderingHint(Ljava/awt/RenderingHints$Key;Ljava/lang/Object;)V
-paintComponent javax.swing.JComponent#paintComponent(Ljava/awt/Graphics;)V
-dispose java.awt.Graphics#dispose()V

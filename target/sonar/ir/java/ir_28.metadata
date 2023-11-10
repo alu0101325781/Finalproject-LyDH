@@ -1,6 +1,0 @@
-Board#isGameOver()V
-Board#isMovePossible()Z
-Board#isFull()Z
-Board#newRandomTile()V
-==
-setWonOrLost Board#setWonOrLost(Ljava/lang/String;)V

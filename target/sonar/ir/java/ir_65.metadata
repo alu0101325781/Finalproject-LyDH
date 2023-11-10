@@ -1,6 +1,0 @@
-Grid#drawBackground(Ljava/awt/Graphics;)V
-==
-fillRect java.awt.Graphics#fillRect(IIII)V
-getHeight Window#getHeight()I
-getWidth Window#getWidth()I
-setColor java.awt.Graphics#setColor(Ljava/awt/Color;)V

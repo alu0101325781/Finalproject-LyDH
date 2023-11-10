@@ -1,8 +1,8 @@
-ColorScheme.class
-Main.class
-Controls.class
-Board.class
-Grid.class
-Window.class
-Game.class
-Tile.class
+main/java/ColorScheme.class
+main/java/Main.class
+main/java/Tile.class
+main/java/Board.class
+main/java/Grid.class
+main/java/Controls.class
+main/java/Window.class
+main/java/Game.class
