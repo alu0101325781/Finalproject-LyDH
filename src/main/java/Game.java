@@ -1,6 +1,7 @@
 package main.java;
 
 public class Game {
+	private Game() {} // prevents instantiation (static class
 
 	public static final ColorScheme COLORS = new ColorScheme();
 	public static final Window WINDOW = new Window("2048");
