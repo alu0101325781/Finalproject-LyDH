@@ -296,8 +296,8 @@ public class Board {
 			// secureValue.nextBytes(bytes);
 			// int value = new Integer(secureValue);
 			do {
-				row = (int) (Math.random () * 4);
-				col = (int) (Math.random () * 4);
+				row = secureRandom.nextInt(4);
+				col = secureRandom.nextInt(4);
 			} while (getTileAt(row, col).getValue() != 0);
 			setTileAt(row, col, new Tile(value, row, col));
 			emptyTiles--;
