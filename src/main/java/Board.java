@@ -2,6 +2,7 @@ package main.java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.security.SecureRandom;
 
 /**
  * Board
@@ -287,10 +288,13 @@ public class Board {
 		if (genNewTile) {
 			int row;
 			int col;
-			int value = Math.random() < 0.9 ? 2 : 4;
-			// SecureRandom value = new SecureRandom(); // Compliant for security-sensitive use cases
+			SecureRandom secureRandom = new SecureRandom();
+			double randomValue = secureRandom.nextDouble();
+			int value = randomValue < 0.9 ? 2 : 4;
+			//SecureRandom secureValue = new SecureRandom(); // Compliant for security-sensitive use cases
 			// byte bytes[] = new byte[20];
-			// value.nextBytes(bytes);
+			// secureValue.nextBytes(bytes);
+			// int value = new Integer(secureValue);
 			do {
 				row = (int) (Math.random () * 4);
 				col = (int) (Math.random () * 4);
