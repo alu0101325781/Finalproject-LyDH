@@ -37,7 +37,6 @@ public class Controls implements KeyListener {
 		}
 		
 		Game.BOARD.isGameOver();
-		//Game.BOARD.show();
 		Game.WINDOW.repaint();
 		
 	}
