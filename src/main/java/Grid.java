@@ -23,6 +23,7 @@ public class Grid extends JPanel {
 		super(true); // turn on doublebuffering
 	}
 
+	@Override
 	public void paintComponent(Graphics g2) {
 		super.paintComponent(g2);
 
