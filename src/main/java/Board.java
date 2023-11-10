@@ -35,7 +35,7 @@ public class Board {
 
 	private void initialize() {
 		for (int row = 0; row < this.size; row++) {
-			tiles.add(new ArrayList<Tile>());
+			tiles.add(new ArrayList<>());
 			for (int col = 0; col < this.size; col++) {
 				tiles.get(row).add(new Tile());
 			}
@@ -46,7 +46,6 @@ public class Board {
 		Game.CONTROLS.bind();
 		initialize();
 		genInitTiles();
-		//show();
 	}
 
 	public int getSize() {

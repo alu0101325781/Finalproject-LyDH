@@ -35,7 +35,8 @@ public class Tile {
 	}
 	
 	public int merging() {
-		return (this.value += this.value);
+		this.value += this.value;
+		return this.value;
 	}
 	
 	/**
