@@ -287,10 +287,6 @@ public class Board {
 			SecureRandom secureRandom = new SecureRandom();
 			double randomValue = secureRandom.nextDouble();
 			int value = randomValue < 0.9 ? 2 : 4;
-			//SecureRandom secureValue = new SecureRandom(); // Compliant for security-sensitive use cases
-			// byte bytes[] = new byte[20];
-			// secureValue.nextBytes(bytes);
-			// int value = new Integer(secureValue);
 			do {
 				row = secureRandom.nextInt(4);
 				col = secureRandom.nextInt(4);
