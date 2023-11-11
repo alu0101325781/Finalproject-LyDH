@@ -7,17 +7,19 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
-import javax.swing.JPanel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
 
 public class Grid extends JPanel {
 
 	private static final long serialVersionUID = 1L;
-
 	private static final int TILE_RADIUS = 15;
 	private static final int WIN_MARGIN = 20;
 	private static final int TILE_SIZE = 65;
 	private static final int TILE_MARGIN = 15;
 	private static final String FONT = "Tahoma";
+
 
 	public Grid() {
 		super(true); // turn on doublebuffering
@@ -43,7 +45,11 @@ public class Grid extends JPanel {
 
 	private static void drawTitle(Graphics g) {
 		g.setFont( new Font(FONT, Font.BOLD, 38) );
-		g.setColor( ColorScheme.BRIGHT );
+		if (Game.isDarkMode) {
+			g.setColor( ColorSchemeDark.DARK_BRIGHT );
+		} else {
+			g.setColor( ColorSchemeDark.BRIGHT );
+		}
 		g.drawString("2048", WIN_MARGIN, 50);
 	}
 
@@ -61,13 +67,21 @@ public class Grid extends JPanel {
 	}
 
 	private static void drawBackground(Graphics g) {
-		g.setColor(ColorScheme.WINBG);
-		g.fillRect(0, 0, Game.WINDOW.getWidth(), Game.WINDOW.getHeight());		
+		if(Game.isDarkMode) {
+			g.setColor(ColorSchemeDark.DARK_WINBG);
+		} else {
+			g.setColor(ColorSchemeDark.WINBG);
+		}
+		g.fillRect(0, 0, Game.WINDOW.getWidth(), Game.WINDOW.getHeight());
 	}
 
 	private static void drawBoard(Graphics g) {
 		g.translate(WIN_MARGIN, 80);
-		g.setColor(ColorScheme.GRIDBG);
+		if (Game.isDarkMode) {
+			g.setColor(ColorSchemeDark.DARK_GRIDBG);
+		} else {
+			g.setColor(ColorSchemeDark.GRIDBG);
+		}
 		g.fillRoundRect(0, 0, Game.WINDOW.getWidth() - (WIN_MARGIN * 2), 320 + TILE_MARGIN, TILE_RADIUS, TILE_RADIUS);
 
 		for (int row = 0; row < 4; row++) {
@@ -83,7 +97,6 @@ public class Grid extends JPanel {
 		int yOffset = y * (TILE_MARGIN + TILE_SIZE) + TILE_MARGIN;
 		g.setColor(Game.COLORS.getTileBackground(value));
 		g.fillRoundRect(xOffset, yOffset, TILE_SIZE, TILE_SIZE, TILE_RADIUS, TILE_RADIUS);
-
 		g.setColor(Game.COLORS.getTileColor(value));
 
 		final int size = value < 100 ? 36 : value < 1000 ? 32 : 24;
@@ -106,7 +119,11 @@ public class Grid extends JPanel {
 		if (Game.BOARD.getWonOrLost() != null && !Game.BOARD.getWonOrLost().isEmpty()) {
 			g.setColor(new Color(255, 255, 255, 40));
 			g.fillRect(0, 0, Game.WINDOW.getWidth(), Game.WINDOW.getHeight());
-			g.setColor(ColorScheme.BRIGHT);
+			if (Game.isDarkMode) {
+				g.setColor(ColorSchemeDark.DARK_BRIGHT);
+			} else {
+				g.setColor(ColorSchemeDark.BRIGHT);
+			}
 			g.setFont(new Font(FONT, Font.BOLD, 30));
 			g.drawString("You " + Game.BOARD.getWonOrLost() + "!", 68, 150);
 			Game.CONTROLS.unbind();
