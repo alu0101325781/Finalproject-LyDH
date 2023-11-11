@@ -6,7 +6,7 @@ public class Game {
 		Game.isDarkMode = isDarkModeAux;
 	} // prevents instantiation (static class
 
-	public static  ColorSchemeDark COLORS = new ColorSchemeDark();
+	public static ColorScheme COLORS = new ColorScheme();
 	public static final Window WINDOW = new Window("2048");
 	public static final Controls CONTROLS = new Controls();
 	public static final Board BOARD = new Board(4);

@@ -7,8 +7,6 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class Grid extends JPanel {
@@ -46,9 +44,9 @@ public class Grid extends JPanel {
 	private static void drawTitle(Graphics g) {
 		g.setFont( new Font(FONT, Font.BOLD, 38) );
 		if (Game.isDarkMode) {
-			g.setColor( ColorSchemeDark.DARK_BRIGHT );
+			g.setColor( ColorScheme.DARK_BRIGHT );
 		} else {
-			g.setColor( ColorSchemeDark.BRIGHT );
+			g.setColor( ColorScheme.BRIGHT );
 		}
 		g.drawString("2048", WIN_MARGIN, 50);
 	}
@@ -68,9 +66,9 @@ public class Grid extends JPanel {
 
 	private static void drawBackground(Graphics g) {
 		if(Game.isDarkMode) {
-			g.setColor(ColorSchemeDark.DARK_WINBG);
+			g.setColor(ColorScheme.DARK_WINBG);
 		} else {
-			g.setColor(ColorSchemeDark.WINBG);
+			g.setColor(ColorScheme.WINBG);
 		}
 		g.fillRect(0, 0, Game.WINDOW.getWidth(), Game.WINDOW.getHeight());
 	}
@@ -78,9 +76,9 @@ public class Grid extends JPanel {
 	private static void drawBoard(Graphics g) {
 		g.translate(WIN_MARGIN, 80);
 		if (Game.isDarkMode) {
-			g.setColor(ColorSchemeDark.DARK_GRIDBG);
+			g.setColor(ColorScheme.DARK_GRIDBG);
 		} else {
-			g.setColor(ColorSchemeDark.GRIDBG);
+			g.setColor(ColorScheme.GRIDBG);
 		}
 		g.fillRoundRect(0, 0, Game.WINDOW.getWidth() - (WIN_MARGIN * 2), 320 + TILE_MARGIN, TILE_RADIUS, TILE_RADIUS);
 
@@ -120,9 +118,9 @@ public class Grid extends JPanel {
 			g.setColor(new Color(255, 255, 255, 40));
 			g.fillRect(0, 0, Game.WINDOW.getWidth(), Game.WINDOW.getHeight());
 			if (Game.isDarkMode) {
-				g.setColor(ColorSchemeDark.DARK_BRIGHT);
+				g.setColor(ColorScheme.DARK_BRIGHT);
 			} else {
-				g.setColor(ColorSchemeDark.BRIGHT);
+				g.setColor(ColorScheme.BRIGHT);
 			}
 			g.setFont(new Font(FONT, Font.BOLD, 30));
 			g.drawString("You " + Game.BOARD.getWonOrLost() + "!", 68, 150);
