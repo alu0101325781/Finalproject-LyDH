@@ -12,7 +12,7 @@ import java.security.SecureRandom;
 public class Board {
 
 	private int size; 						// size of the grid
-	private int score; 						// game score
+	private static int score; 						// game score
 	private int emptyTiles;					// number of tiles with zero value
 	private int initTiles = 2; 				// number of tiles board starts with (usually two tiles)
 	private boolean gameover = false; 		// game is over when 2048 tile is found
@@ -76,7 +76,7 @@ public class Board {
 		tiles.get(row).remove(col);
 	}
 	
-	public int getScore() {
+	public static int getScore() {
 		return score;
 	}
 
