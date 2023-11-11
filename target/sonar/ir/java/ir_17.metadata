@@ -1,7 +1,0 @@
-Board#mergeTiles(Ljava/util/List;)Ljava/util/List;
-==
-merging Tile#merging()I
-getValue Tile#getValue()I
-get java.util.List#get(I)Ljava/lang/Object;
-remove java.util.List#remove(I)Ljava/lang/Object;
-size java.util.List#size()I

@@ -6,11 +6,11 @@ import java.util.HashMap;
 
 public class ColorScheme {
 
-	public final static Color WINBG = new Color (0XFAF8EF);
-	public final static Color GRIDBG = new Color (0XBBADA0);
+	public static final Color WINBG = new Color (0XFAF8EF);
+	public static final Color GRIDBG = new Color (0XBBADA0);
 
-	public final static Color BRIGHT = new Color (0X776E65);
-	public final static Color LIGHT = new Color (0XF9F6F2);
+	public static final Color BRIGHT = new Color (0X776E65);
+	public static final Color LIGHT = new Color (0XF9F6F2);
 
 	private HashMap<Integer, Color> background = new HashMap<>();
 

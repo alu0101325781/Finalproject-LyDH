@@ -26,15 +26,15 @@ public class Window extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = -8804446439773037674L;
-	private int width_ = 375;
-	private int height_ = 450;
+	private int xWidth = 375;
+	private int yHeight = 450;
 
 	public Window(String title) {
 		super(title); // Window title
 
 		this.setLayout( new BorderLayout());
 		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // close window to exit
-		this.setSize(this.width_, this.height_);
+		this.setSize(this.xWidth, this.yHeight);
 		this.setLocationRelativeTo(null); // centering
 
 		this.setResizable(false);
@@ -63,12 +63,14 @@ public class Window extends JFrame {
 		return button;
 	}
 
+	@Override
 	public int getWidth() {
-		return width_;
+		return xWidth;
 	}
 
+	@Override
 	public int getHeight() {
-		return height_;
+		return yHeight;
 	}
 
 }

@@ -1,78 +1,0 @@
-Ê
-Window,
-<init>"Window#<init>(Ljava/lang/String;)VX
-createSimpleButtonBWindow#createSimpleButton(Ljava/lang/String;)Ljavax/swing/JButton; 
-	getHeightWindow#getHeight()I
-getWidthWindow#getWidth()Ijavax.swing.JFrame€
-
-Board
-<init>Board#<init>(I)VP
-addEmptyTilesFirst:Board#addEmptyTilesFirst(Ljava/util/List;)Ljava/util/List;N
-addEmptyTilesLast9Board#addEmptyTilesLast(Ljava/util/List;)Ljava/util/List;%
-genInitTilesBoard#genInitTiles()V
-getScoreBoard#getScore()I
-getSizeBoard#getSize()I&
-	getTileAtBoard#getTileAt(II)LTile;,
-getTiles Board#getTiles()Ljava/util/List;6
-getWonOrLost&Board#getWonOrLost()Ljava/lang/String;!
-
-initializeBoard#initialize()V
-isFullBoard#isFull()Z!
-
-isGameOverBoard#isGameOver()V)
-isMovePossibleBoard#isMovePossible()Z@
-
-mergeTiles2Board#mergeTiles(Ljava/util/List;)Ljava/util/List;
-moveDownBoard#moveDown()V
-moveLeftBoard#moveLeft()V
-	moveRightBoard#moveRight()V
-moveUpBoard#moveUp()V'
-newRandomTileBoard#newRandomTile()V!
-	remTileAtBoard#remTileAt(II)VE
-removeEmptyTilesCols-Board#removeEmptyTilesCols(I)Ljava/util/List;E
-removeEmptyTilesRows-Board#removeEmptyTilesRows(I)Ljava/util/List;G
-setColToBoard6Board#setColToBoard(Ljava/util/List;I)Ljava/util/List;G
-setRowToBoard6Board#setRowToBoard(Ljava/util/List;I)Ljava/util/List;
-setSizeBoard#setSize(I)V'
-	setTileAtBoard#setTileAt(IILTile;)V-
-setTiles!Board#setTiles(Ljava/util/List;)V7
-setWonOrLost'Board#setWonOrLost(Ljava/lang/String;)V
-showBoard#show()V
-startBoard#start()Vjava.lang.Object2
-Game
-<init>Game#<init>()Vjava.lang.Object…
-Controls
-<init>Controls#<init>()V
-bindControls#bind()V=
-
-keyPressed/Controls#keyPressed(Ljava/awt/event/KeyEvent;)V?
-keyReleased0Controls#keyReleased(Ljava/awt/event/KeyEvent;)V9
-keyTyped-Controls#keyTyped(Ljava/awt/event/KeyEvent;)V
-unbindControls#unbind()Vjava.awt.event.KeyListenerjava.lang.Objectı
-ColorScheme
-<init>ColorScheme#<init>()VE
-getTileBackground0ColorScheme#getTileBackground(I)Ljava/awt/Color;;
-getTileColor+ColorScheme#getTileColor(I)Ljava/awt/Color;/
-initBackroundsColorScheme#initBackrounds()Vjava.lang.Object‘
-Tile
-<init>Tile#<init>()V
-<init>Tile#<init>(I)V
-<init>Tile#<init>(III)V
-getValueTile#getValue()I
-hasMovedTile#hasMoved(II)Z
-isEmptyTile#isEmpty()Z
-mergingTile#merging()I$
-setPositionTile#setPosition(II)V
-setValueTile#setValue(I)V-
-toString!Tile#toString()Ljava/lang/String;java.lang.Objectå
-Grid
-<init>Grid#<init>()V;
-drawBackground)Grid#drawBackground(Ljava/awt/Graphics;)V1
-	drawBoard$Grid#drawBoard(Ljava/awt/Graphics;)V=
-drawScoreBoard+Grid#drawScoreBoard(Ljava/awt/Graphics2D;)V7
-drawTile+Grid#drawTile(Ljava/awt/Graphics;LTile;II)V1
-	drawTitle$Grid#drawTitle(Ljava/awt/Graphics;)V;
-paintComponent)Grid#paintComponent(Ljava/awt/Graphics;)Vjavax.swing.JPanel[
-Main
-<init>Main#<init>()V'
-mainMain#main([Ljava/lang/String;)Vjava.lang.Object

@@ -2,6 +2,7 @@ package main.java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.security.SecureRandom;
 
 /**
  * Board
@@ -34,7 +35,7 @@ public class Board {
 
 	private void initialize() {
 		for (int row = 0; row < this.size; row++) {
-			tiles.add(new ArrayList<Tile>());
+			tiles.add(new ArrayList<>());
 			for (int col = 0; col < this.size; col++) {
 				tiles.get(row).add(new Tile());
 			}
@@ -235,14 +236,11 @@ public class Board {
 	public void isGameOver() {
 		
 		if (gameover) {
-			// vyhrál jsi (na desce je dláždice 2048)
-			// end(true);
 			setWonOrLost("WON");
 		} else {
 			if (isFull()) {
 				if (!isMovePossible()) {
 					// you lost (board is full with no tiles to merge)
-					// end(false);
 					setWonOrLost("LOST");
 				}
 				
@@ -286,13 +284,12 @@ public class Board {
 		if (genNewTile) {
 			int row;
 			int col;
-			int value = Math.random() < 0.9 ? 2 : 4;
-			// SecureRandom value = new SecureRandom(); // Compliant for security-sensitive use cases
-			// byte bytes[] = new byte[20];
-			// value.nextBytes(bytes);
+			SecureRandom secureRandom = new SecureRandom();
+			double randomValue = secureRandom.nextDouble();
+			int value = randomValue < 0.9 ? 2 : 4;
 			do {
-				row = (int) (Math.random () * 4);
-				col = (int) (Math.random () * 4);
+				row = secureRandom.nextInt(4);
+				col = secureRandom.nextInt(4);
 			} while (getTileAt(row, col).getValue() != 0);
 			setTileAt(row, col, new Tile(value, row, col));
 			emptyTiles--;
