@@ -1,10 +1,7 @@
 package main.java;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -16,7 +13,7 @@ public class Menu extends JFrame {
 
     private void initializeUI() {
         setTitle("2048");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(300, 250);
         setResizable(false);
         setLocationRelativeTo(null);
@@ -34,9 +31,11 @@ public class Menu extends JFrame {
         lightModeButton.addActionListener(e -> openGameWindow(false));
         mainPanel.add(lightModeButton);
 
+
         darkModeButton = createStyledButton("Dark Mode", new Color(59, 57, 57),new Color(0xABFFFF) );
         darkModeButton.addActionListener(e -> openGameWindow(true));
         mainPanel.add(darkModeButton);
+
 
         // Agregar el panel principal al JFrame
         add(mainPanel);
@@ -65,9 +64,13 @@ public class Menu extends JFrame {
     }
 
 
+    private static void openGameWindowStatic(boolean isDarkMode) {
+        Game.isDarkMode = isDarkMode;
+    }
+
     private void openGameWindow(boolean isDarkMode) {
-        Game game = new Game(isDarkMode);
-        dispose(); // Cierra la ventana actual
+        openGameWindowStatic(isDarkMode);
+        dispose();
     }
 
 }
