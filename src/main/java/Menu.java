@@ -63,6 +63,7 @@ public class Menu extends JFrame {
         return button;
     }
 
+
     private static void openGameWindowStatic(boolean isDarkMode) {
         Game.isDarkMode = isDarkMode;
     }
