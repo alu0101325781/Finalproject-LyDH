@@ -3,4 +3,5 @@ name: SonarCloud Analysis
 on:
   push:
     branches:
-      - '*'
+      - main
+      - branch-*
