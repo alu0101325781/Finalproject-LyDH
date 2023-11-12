@@ -5,11 +5,10 @@ import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Menu extends JFrame {
-
-    private JButton startButton;
-    private JButton darkModeButton;
 
     public Menu() {
         initializeUI();
@@ -22,17 +21,20 @@ public class Menu extends JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
 
+        JButton lightModeButton;
+        JButton darkModeButton;
+
 
         // Crear un panel principal con un diseño de cuadrícula
         JPanel mainPanel = new JPanel(new GridLayout(3, 1, 10, 10));
         mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         // Crear botones con un diseño más limpio y agregarlos al panel principal
-        startButton = createStyledButton("Light Mode");
-        startButton.addActionListener(e -> openGameWindow(false));
-        mainPanel.add(startButton);
+        lightModeButton = createStyledButton("Light Mode", new Color(214, 204, 194, 255), new Color(0xFFE76F51, true));
+        lightModeButton.addActionListener(e -> openGameWindow(false));
+        mainPanel.add(lightModeButton);
 
-        darkModeButton = createStyledButton("Dark Mode");
+        darkModeButton = createStyledButton("Dark Mode", new Color(59, 57, 57),new Color(0xABFFFF) );
         darkModeButton.addActionListener(e -> openGameWindow(true));
         mainPanel.add(darkModeButton);
 
@@ -43,17 +45,25 @@ public class Menu extends JFrame {
         setVisible(true);
     }
 
-    private JButton createStyledButton(String text) {
-        JButton button = new JButton(text);
-        button.setFont(new Font("Tahoma", Font.BOLD, 20));
-        button.setBackground(new Color(117, 111, 108));
-        button.setForeground(Color.WHITE);
-        button.setFocusPainted(false);
-        button.setBorderPainted(false);
-        button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+    private RoundButton createStyledButton(String text, Color backgroundColor, Color foregroundColor) {
+        RoundButton button = new RoundButton(text, backgroundColor, foregroundColor);
+        button.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                button.setBackground(backgroundColor.brighter());
+                repaint();
+                button.setSize(new Dimension(button.getWidth() + 10, button.getHeight() + 5));
+            }
 
+            @Override
+            public void mouseExited(MouseEvent e) {
+                button.setSize(new Dimension(button.getWidth() - 10, button.getHeight() - 5));
+            }
+
+        });
         return button;
     }
+
 
     private void openGameWindow(boolean isDarkMode) {
         Game game = new Game(isDarkMode);

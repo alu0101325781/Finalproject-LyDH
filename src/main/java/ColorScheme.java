@@ -13,9 +13,9 @@ public class ColorScheme {
 
     // Colores para el modo oscuro
     public static final Color DARK_WINBG = new Color(0x3B3939);
-    public static final Color DARK_GRIDBG = new Color(0x4F4949);
-    public static final Color DARK_BRIGHT = new Color(0x7C7C7C);
-    public static final Color DARK_LIGHT = new Color(0X777777);
+    public static final Color DARK_GRIDBG = new Color(0x595353);
+    public static final Color DARK_BRIGHT = new Color(0x526679);
+    public static final Color DARK_LIGHT = new Color(0x706F6F);
 
     private HashMap<Integer, Color> background = new HashMap<>();
 
@@ -44,17 +44,17 @@ public class ColorScheme {
 
     private void initDarkBackgrounds() {
         background.put(0, new Color(30, 30, 30, 90));
-        background.put(2, new Color(0x87CEFA)); // Light Sky Blue
-        background.put(4, new Color(0xADD8E6)); // Light Blue
-        background.put(8, new Color(0xB0E0E6)); // Powder Blue
-        background.put(16, new Color(0xF0F8FF)); // Alice Blue
-        background.put(32, new Color(0xADD8E6)); // Light Blue
-        background.put(64, new Color(0xCAE1FF)); // Light Steel Blue
-        background.put(128, new Color(0xE0F0FF)); // Azure
-        background.put(256, new Color(0xF0F8FF)); // Alice Blue
-        background.put(512, new Color(0xE0FFFF)); // Light Cyan
-        background.put(1024, new Color(0xE0FFFF)); // Light Cyan
-        background.put(2048, new Color(0xF0F8FF)); // Alice Blue
+        background.put(2, new Color(0xC9EEFD)); // Light Sky Blue
+        background.put(4, new Color(0x99F1F1)); // Light Blue
+        background.put(8, new Color(0x96F3F3)); // Powder Blue
+        background.put(16, new Color(0xA3BCEC)); // Alice Blue
+        background.put(32, new Color(0x9CC2EE)); // Light Blue
+        background.put(64, new Color(0x99C4EE)); // Light Steel Blue
+        background.put(128, new Color(0x82C6DC)); // Azure
+        background.put(256, new Color(0x88B4D9)); // Alice Blue
+        background.put(512, new Color(0x7DD8E3)); // Light Cyan
+        background.put(1024, new Color(0x65B9DE)); // Light Cyan
+        background.put(2048, new Color(0x4DB3F3)); // Alice Blue
     }
 
 

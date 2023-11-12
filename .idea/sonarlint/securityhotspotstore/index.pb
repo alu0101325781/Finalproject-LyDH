@@ -53,7 +53,5 @@ N
 src/main/java/ColorScheme.java,c\0\c050358619acfdc3f675608463e7547cd208454c
 H
 src/main/java/Board.java,d\9\d97dc2d665bc91e290414f0a699dcd267f0868ce
-R
-"src/main/java/ColorSchemeDark.java,1\f\1fc5d64ca81c72f83c6fe2ebd0acfbf7601f450f
 G
 src/main/java/Menu.java,c\3\c31bdfc90166c3f89692de109e3f301e89b75476
