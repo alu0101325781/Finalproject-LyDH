@@ -2,3 +2,5 @@ name: SonarCloud Analysis
 
 on:
   push:
+    branches:
+      - '*'
