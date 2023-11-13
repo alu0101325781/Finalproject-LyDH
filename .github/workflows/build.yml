@@ -1,6 +1,8 @@
 name: SonarCloud Analysis
-
 on:
   push:
     branches:
-      - '*'
+      - main
+      - Estilo
+      - Dificultad
+      - clasificacion
