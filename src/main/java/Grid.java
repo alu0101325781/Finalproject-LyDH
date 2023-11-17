@@ -86,7 +86,7 @@ public class Grid extends JPanel {
 
 		g.setColor(Game.COLORS.getTileColor(value));
 
-		final int size = value < 100 ? 36 : value < 1000 ? 32 : 24;
+		final int size = value < 100 ? 36: value < 10000 ? 26 : value < 100000 ? 20 : 18;
 		final Font font = new Font(FONT, Font.BOLD, size);
 		g.setFont(font);
 

@@ -31,6 +31,13 @@ public class ColorScheme {
 		background.put(512,		new Color (0XEDC850));
 		background.put(1024, 	new Color (0XEDC53F));
 		background.put(2048, 	new Color (0XEDC22E));
+		background.put(4096, 	new Color (0XEEE4DA));
+		background.put(8192, 	new Color (0XEDE0C8));
+		background.put(16384, 	new Color (0XF2B179));
+		background.put(32768, 	new Color (0XF59563));
+		background.put(65536, 	new Color (0XF67C5F));
+		background.put(131072, 	new Color (0XF65E3B));
+		
 	}
 
 	public Color getTileBackground(int value) {
