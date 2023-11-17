@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.security.SecureRandom;
 
+
 /**
  * Board
  * @author petrnemecek
@@ -14,30 +15,20 @@ public class Board {
 	private int size; 						// size of the grid
 	private static int score; 						// game score
 	private int emptyTiles;					// number of tiles with zero value
-	//private int initTiles = 2; 				// number of tiles board starts with (usually two tiles)
 	private boolean gameover = false; 		// game is over when 2048 tile is found
 	private boolean mode; 					// true modo normal false modo sin fin
 	private String wonOrLost;				// won or lost
 	private boolean genNewTile = false;		// generate new tile when any tile moved
 	private List<List<Tile>> tiles;			// board
 
+	private static int dificultad ;  // Nueva variable para almacenar la dificultad
+
+
 	//Gestión de dificultad, generador de tiles (Tocado también en el newRandomTile())
 	//En el genInitTiles() modificado para que cree tiles = numberTiles al empezar
-	private int numberTiles = 2;
 
-	public int getNumberTiles() {
-		return numberTiles;
-	}
 
-	public void setNumberTiles(int numberTiles) {
-		this.numberTiles = numberTiles;
-	}
 
-	private void updateNumberTiles() {
-		if (emptyTiles == 1) {
-			setNumberTiles(1);
-		}
-	}
 
 	public Board(int size, boolean mode) {
 		super();
@@ -45,8 +36,14 @@ public class Board {
 		this.emptyTiles = this.size * this.size;
 		this.tiles = new ArrayList<>();
 		this.mode = mode;
-		
+
+
+
 		start();
+	}
+
+	public static void setDificultad(int dificultad) {
+		Board.dificultad = dificultad;
 	}
 
 	private void initialize() {
@@ -57,7 +54,7 @@ public class Board {
 			}
 		}
 	}
-	
+
 	private void start() {
 		Game.CONTROLS.bind();
 		initialize();
@@ -71,7 +68,7 @@ public class Board {
 	public void setSize(int size) {
 		this.size = size;
 	}
-	
+
 	public void setMode(boolean mode) {
 		this.mode = mode;
 	}
@@ -95,7 +92,7 @@ public class Board {
 	public void remTileAt(int row, int col) {
 		tiles.get(row).remove(col);
 	}
-	
+
 	public static int getScore() {
 		return score;
 	}
@@ -121,7 +118,7 @@ public class Board {
 		}
 		return sequence;
 	}
-	
+
 	private List<Tile> mergeTilesMode1(List<Tile> sequence) {
 		//System.out.printf("Estas en el modo sin fin");
 		for (int l = 0; l < sequence.size() - 1; l++) {
@@ -206,7 +203,7 @@ public class Board {
 		for (int col = 0; col < tiles.size(); col++) {
 			if (moved.get(col).hasMoved(col, row)) {
 				genNewTile = true;
-			}			
+			}
 			setTileAt(col, row, moved.get(col));
 		}
 
@@ -248,7 +245,7 @@ public class Board {
 			moved = setColToBoard(moved, row);
 
 		}
-		
+
 	}
 
 	public void moveLeft() {
@@ -267,13 +264,13 @@ public class Board {
 			moved = setRowToBoard(moved, row);
 
 		}
-		
+
 	}
 
 	public void moveRight() {
-		
+
 		List<Tile> moved;
-		
+
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesRows(row);
@@ -286,11 +283,11 @@ public class Board {
 			moved = setRowToBoard(moved, row);
 
 		}
-		
+
 	}
-	
+
 	public void isGameOver() {
-		
+
 		if (gameover) {
 			setWonOrLost("WON");
 		} else {
@@ -299,17 +296,17 @@ public class Board {
 					// you lost (board is full with no tiles to merge)
 					setWonOrLost("LOST");
 				}
-				
+
 			} else {
 				newRandomTile(); // game continues
 			}
 		}
 	}
-	
+
 	private boolean isFull() {
 		return emptyTiles == 0;
 	}
-	
+
 	private boolean isMovePossible() {
 		for (int row = 0; row < size; row++) {
 			for (int col = 0; col < size - 1; col++) {
@@ -318,7 +315,7 @@ public class Board {
 				}
 			}
 		}
-		
+
 		for (int row = 0; row < size - 1; row++) {
 			for (int col = 0; col < size; col++) {
 				if (getTileAt(col, row).getValue() == getTileAt(col, row + 1).getValue()) {
@@ -332,8 +329,8 @@ public class Board {
 	private void genInitTiles() {
 		genNewTile = true;
 		newRandomTile();
-		if (getNumberTiles() == 2){
-			setNumberTiles(getNumberTiles()/2);
+		if (Board.dificultad == 2){
+			Board.dificultad = Board.dificultad/2;
 		}
 	}
 
@@ -342,7 +339,7 @@ public class Board {
 		if (genNewTile) {
 			SecureRandom secureRandom = new SecureRandom();
 
-			int tilesToGenerate = Math.min(getNumberTiles(), emptyTiles);
+			int tilesToGenerate = Math.min(Board.dificultad, emptyTiles);
 
 			for (int i = 0; i < tilesToGenerate; i++) {
 				int row;
@@ -359,7 +356,6 @@ public class Board {
 				emptyTiles--;
 			}
 
-			updateNumberTiles(); // Call the method to update NUMBER_TILES
 			genNewTile = false;
 		}
 	}

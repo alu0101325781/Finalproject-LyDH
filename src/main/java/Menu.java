@@ -2,10 +2,14 @@ package main.java;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Menu extends JFrame {
+
+
 
     public Menu() {
         initializeUI();
@@ -28,12 +32,12 @@ public class Menu extends JFrame {
 
         // Crear botones con un diseño más limpio y agregarlos al panel principal
         lightModeButton = createStyledButton("Light Mode", new Color(214, 204, 194, 255), new Color(0xFFE76F51, true));
-        lightModeButton.addActionListener(e -> openGameWindow(false));
+        lightModeButton.addActionListener(e -> openDifficultyWindow(false));
         mainPanel.add(lightModeButton);
 
 
         darkModeButton = createStyledButton("Dark Mode", new Color(59, 57, 57),new Color(0xABFFFF) );
-        darkModeButton.addActionListener(e -> openGameWindow(true));
+        darkModeButton.addActionListener(e -> openDifficultyWindow(true));
         mainPanel.add(darkModeButton);
 
 
@@ -61,6 +65,51 @@ public class Menu extends JFrame {
 
         });
         return button;
+    }
+
+    private void openDifficultyWindow(boolean isDarkMode) {
+        JFrame difficultyFrame = new JFrame("Select Difficulty");
+        difficultyFrame.setSize(300, 250);
+        difficultyFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        difficultyFrame.setResizable(false);
+        difficultyFrame.setLocationRelativeTo(null);
+
+        JPanel difficultyPanel = new JPanel(new GridLayout(4, 1, 10, 10));
+        difficultyPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        String[] difficulties = {"Normal", "Difícil", "Muy Difícil", "Imposible"};
+
+        for (String difficulty : difficulties) {
+            JButton difficultyButton = createStyledButton(difficulty, Color.GRAY, Color.WHITE);
+            difficultyButton.addActionListener( e -> {
+                Board.setDificultad(setDifficulty(difficulty));
+                difficultyFrame.dispose();
+                openGameWindow(isDarkMode);
+            });
+            difficultyPanel.add(difficultyButton);
+        }
+
+
+        difficultyFrame.add(difficultyPanel);
+        difficultyFrame.setVisible(true);
+
+
+
+    }
+
+    private int setDifficulty(String difficulty) {
+        switch (difficulty) {
+            case "Normal":
+                return 2;
+            case "Difícil":
+                return 3;
+            case "Muy Difícil":
+                return 4;
+            case "Imposible":
+                return 5;
+            default:
+                return 2; // Default to normal difficulty
+        }
     }
 
 

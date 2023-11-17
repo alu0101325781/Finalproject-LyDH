@@ -2,6 +2,7 @@ package main.java;
 
 public class Game {
 	public static boolean isDarkMode;
+
 	protected Game() { } // prevents instantiation (static class
 
 	public static ColorScheme COLORS = new ColorScheme();
