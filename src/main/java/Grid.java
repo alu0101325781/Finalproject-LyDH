@@ -2,12 +2,20 @@ package main.java;
 
 
 import java.awt.Color;
+// import java.awt.Component;
+// import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+
+import javax.swing.JOptionPane;
 import javax.swing.*;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 
 public class Grid extends JPanel {
 
@@ -19,8 +27,58 @@ public class Grid extends JPanel {
 	private static final String FONT = "Tahoma";
 
 
+	private static boolean isMouseOverButton = false;
+
 	public Grid() {
 		super(true); // turn on doublebuffering
+
+		addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				if (e.getX() >= 140 && e.getX() <= 240 && e.getY() >= 30 && e.getY() <= 60) {
+					endGame();
+				}
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				if (e.getX() >= 140 && e.getX() <= 240 && e.getY() >= 30 && e.getY() <= 60) {
+					isMouseOverButton = true;
+					repaint();
+				}
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+				if (e.getX() >= 140 && e.getX() <= 240 && e.getY() >= 30 && e.getY() <= 60) {
+					isMouseOverButton = false;
+					repaint();
+				}
+			}
+		});
+
+		addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+					if (e.getX() >= 0 && e.getX() <= 20 && e.getY() >= 0 && e.getY() <= 20) {
+							repaint();
+					}
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+					if (e.getX() >= 0 && e.getX() <= 20 && e.getY() >= 0 && e.getY() <= 20) {
+							repaint();
+					}
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent e) {
+					if (e.getX() >= 0 && e.getX() <= 20 && e.getY() >= 0 && e.getY() <= 20) {
+						showLeaderboard();
+					}
+			}
+	});		
 	}
 
 	@Override
@@ -37,8 +95,29 @@ public class Grid extends JPanel {
 		drawTitle(g);
 		drawScoreBoard(g);
 		drawBoard(g);
-
+		drawButton(g);
+		drawTrophy(g);
 		g.dispose(); // release memory
+	}
+
+	private static void drawButton(Graphics g) {
+		if (isMouseOverButton) {
+			g.setColor(ColorScheme.BRIGHT.darker());
+		} else {
+			g.setColor(ColorScheme.BRIGHT);
+		}
+		g.fillRoundRect(120, -50, 100, 30, TILE_RADIUS, TILE_RADIUS);
+		g.setFont(new Font(FONT, Font.BOLD, 12));
+		g.setColor(new Color(0XFFFFFF));
+		g.drawString("End Game", 138, -31);
+	}
+
+	private static void drawTrophy(Graphics g) {
+		g.setColor(ColorScheme.BRIGHT);
+		g.fillRoundRect(-20, -79, 20, 20, TILE_RADIUS, TILE_RADIUS);
+		g.setFont(new Font(FONT, Font.BOLD, 13));
+		g.setColor(new Color(0XFFFFFF));
+		g.drawString("🏆", -16, -64);
 	}
 
 	private static void drawTitle(Graphics g) {
@@ -61,7 +140,7 @@ public class Grid extends JPanel {
 		g.setColor( new Color(0XFFFFFF) );
 		g.drawString("SCORE", xOffset + 22, yOffset + 15);
 		g.setFont( new Font(FONT, Font.BOLD, 12) );
-		g.drawString(String.valueOf(Game.BOARD.getScore()), xOffset + 35, yOffset + 30);
+		g.drawString(String.valueOf(Board.getScore()), xOffset + 35, yOffset + 30);
 	}
 
 	private static void drawBackground(Graphics g) {
@@ -128,4 +207,22 @@ public class Grid extends JPanel {
 
 	}
 
+	private void endGame() {
+		String name = JOptionPane.showInputDialog("Enter your name: ");
+		if (name == null || name.isEmpty()) {
+			name = "Anonymous";
+		}
+		int score = Board.getScore();
+		Leaderboard.addPlayer(new Player(name, score));
+		System.exit(0);
+	}
+
+	private void showLeaderboard() {
+		String leaderboard = "Tabla de clasificación:\n\n";
+		Leaderboard.sortPlayers();
+		for (Player player : Leaderboard.loadLeaderboard()) {
+			leaderboard += player.getName() + " " + player.getScore() + "\n";
+		}
+		JOptionPane.showMessageDialog(null, leaderboard, "Leaderboard", JOptionPane.INFORMATION_MESSAGE);
+	}
 }
