@@ -113,10 +113,8 @@ public class Grid extends JPanel {
 	}
 
 	private static void drawTrophy(Graphics g) {
-		g.setColor(ColorScheme.BRIGHT);
-		g.fillRoundRect(-20, -79, 20, 20, TILE_RADIUS, TILE_RADIUS);
-		g.setFont(new Font(FONT, Font.BOLD, 13));
-		g.setColor(new Color(0XFFFFFF));
+		g.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 13));
+		g.setColor(new Color(000000));
 		g.drawString("🏆", -16, -64);
 	}
 
