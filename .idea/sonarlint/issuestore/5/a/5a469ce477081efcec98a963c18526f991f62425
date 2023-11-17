@@ -1,0 +1,11 @@
+
+s
+java:S1104"VMake isDarkMode a static final constant or non-public and provide accessors if needed.(óâ—­8„¨Œ¼1
+t
+java:S1104"RMake COLORS a static final constant or non-public and provide accessors if needed.(â„„Íüÿÿÿÿ8„¨Œ¼1
+M
+java:S1444"0Make this "public static isDarkMode" field final(óâ—­8„¨Œ¼1
+N
+java:S1444",Make this "public static COLORS" field final(â„„Íüÿÿÿÿ8„¨Œ¼1
+s
+java:S3008"QRename this field "COLORS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â„„Íüÿÿÿÿ8„¨Œ¼1
