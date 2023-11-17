@@ -16,6 +16,7 @@ public class Board {
 	private int emptyTiles;					// number of tiles with zero value
 	//private int initTiles = 2; 				// number of tiles board starts with (usually two tiles)
 	private boolean gameover = false; 		// game is over when 2048 tile is found
+	private boolean mode; 					// true modo normal false modo sin fin
 	private String wonOrLost;				// won or lost
 	private boolean genNewTile = false;		// generate new tile when any tile moved
 	private List<List<Tile>> tiles;			// board
@@ -38,12 +39,13 @@ public class Board {
 		}
 	}
 
-	public Board(int size) {
+	public Board(int size, boolean mode) {
 		super();
 		this.size = size;
 		this.emptyTiles = this.size * this.size;
 		this.tiles = new ArrayList<>();
-
+		this.mode = mode;
+		
 		start();
 	}
 
@@ -68,6 +70,10 @@ public class Board {
 
 	public void setSize(int size) {
 		this.size = size;
+	}
+	
+	public void setMode(boolean mode) {
+		this.mode = mode;
 	}
 
 	public List<List<Tile>> getTiles() {
@@ -103,6 +109,7 @@ public class Board {
 		for (int l = 0; l < sequence.size() - 1; l++) {
 			if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
 				int value;
+				value = sequence.get(l).merging();
 				if ((value = sequence.get(l).merging()) == 2048) {
 					gameover = true;
 				}
@@ -114,6 +121,25 @@ public class Board {
 		}
 		return sequence;
 	}
+	
+	private List<Tile> mergeTilesMode1(List<Tile> sequence) {
+		//System.out.printf("Estas en el modo sin fin");
+		for (int l = 0; l < sequence.size() - 1; l++) {
+			if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
+				int value;
+				value = sequence.get(l).merging();
+				score += value;
+				if(value == 4096) {
+					System.out.printf("El número es: %d%n", value);
+				}
+				sequence.remove(l + 1);
+				genNewTile = true; // board has changed its state
+				emptyTiles++;
+			}
+		}
+		return sequence;
+	}
+
 
 	/**
 	 * creates empty {@link Tile} instances and adds them to the left (resp. top) of merged sequence to fit the board
@@ -194,7 +220,11 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesCols(row);
-			moved = mergeTiles(moved);
+			if(mode == true) {
+				moved = mergeTiles(moved);
+			} else {
+				moved = mergeTilesMode1(moved);
+			}
 			moved = addEmptyTilesLast(moved);
 			moved = setColToBoard(moved, row);
 
@@ -209,7 +239,11 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesCols(row);
-			moved = mergeTiles(moved);
+			if(mode == true) {
+				moved = mergeTiles(moved);
+			} else {
+				moved = mergeTilesMode1(moved);
+			}
 			moved = addEmptyTilesFirst(moved);
 			moved = setColToBoard(moved, row);
 
@@ -224,7 +258,11 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesRows(row);
-			moved = mergeTiles(moved);
+			if(mode == true) {
+				moved = mergeTiles(moved);
+			} else {
+				moved = mergeTilesMode1(moved);
+			}
 			moved = addEmptyTilesLast(moved);
 			moved = setRowToBoard(moved, row);
 
@@ -239,7 +277,11 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesRows(row);
-			moved = mergeTiles(moved);
+			if(mode == true) {
+				moved = mergeTiles(moved);
+			} else {
+				moved = mergeTilesMode1(moved);
+			}
 			moved = addEmptyTilesFirst(moved);
 			moved = setRowToBoard(moved, row);
 
