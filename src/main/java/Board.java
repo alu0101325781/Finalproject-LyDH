@@ -14,16 +14,30 @@ public class Board {
 	private int size; 						// size of the grid
 	private int score; 						// game score
 	private int emptyTiles;					// number of tiles with zero value
-	private int initTiles = 2; 				// number of tiles board starts with (usually two tiles)
+	//private int initTiles = 2; 				// number of tiles board starts with (usually two tiles)
 	private boolean gameover = false; 		// game is over when 2048 tile is found
 	private String wonOrLost;				// won or lost
 	private boolean genNewTile = false;		// generate new tile when any tile moved
 	private List<List<Tile>> tiles;			// board
 
-	/**
-	 * {@link Constructor}
-	 * 
-	 */
+	//Gestión de dificultad, generador de tiles (Tocado también en el newRandomTile())
+	//En el genInitTiles() modificado para que cree tiles = numberTiles al empezar
+	private int numberTiles = 2;
+
+	public int getNumberTiles() {
+		return numberTiles;
+	}
+
+	public void setNumberTiles(int numberTiles) {
+		this.numberTiles = numberTiles;
+	}
+
+	private void updateNumberTiles() {
+		if (emptyTiles == 1) {
+			setNumberTiles(1);
+		}
+	}
+
 	public Board(int size) {
 		super();
 		this.size = size;
@@ -274,25 +288,36 @@ public class Board {
 	}
 
 	private void genInitTiles() {
-		for (int i = 0; i < initTiles; i++) {
-			genNewTile = true;
-			newRandomTile();
+		genNewTile = true;
+		newRandomTile();
+		if (getNumberTiles() == 2){
+			setNumberTiles(getNumberTiles()/2);
 		}
 	}
 
 	private void newRandomTile() {
+
 		if (genNewTile) {
-			int row;
-			int col;
 			SecureRandom secureRandom = new SecureRandom();
-			double randomValue = secureRandom.nextDouble();
-			int value = randomValue < 0.9 ? 2 : 4;
-			do {
-				row = secureRandom.nextInt(4);
-				col = secureRandom.nextInt(4);
-			} while (getTileAt(row, col).getValue() != 0);
-			setTileAt(row, col, new Tile(value, row, col));
-			emptyTiles--;
+
+			int tilesToGenerate = Math.min(getNumberTiles(), emptyTiles);
+
+			for (int i = 0; i < tilesToGenerate; i++) {
+				int row;
+				int col;
+				double randomValue = secureRandom.nextDouble();
+				int value = randomValue < 0.9 ? 2 : 4;
+
+				do {
+					row = secureRandom.nextInt(size);
+					col = secureRandom.nextInt(size);
+				} while (getTileAt(row, col).getValue() != 0);
+
+				setTileAt(row, col, new Tile(value, row, col));
+				emptyTiles--;
+			}
+
+			updateNumberTiles(); // Call the method to update NUMBER_TILES
 			genNewTile = false;
 		}
 	}

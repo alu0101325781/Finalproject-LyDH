@@ -112,7 +112,6 @@ public class Grid extends JPanel {
 			g.drawString(s, xOffset + (TILE_SIZE - w) / 2, yOffset + TILE_SIZE - (TILE_SIZE - h) / 2 - 2);
 		}
 		
-		
 
 		if (Game.BOARD.getWonOrLost() != null && !Game.BOARD.getWonOrLost().isEmpty()) {
 			g.setColor(new Color(255, 255, 255, 40));
@@ -126,7 +125,6 @@ public class Grid extends JPanel {
 			g.drawString("You " + Game.BOARD.getWonOrLost() + "!", 68, 150);
 			Game.CONTROLS.unbind();
 		}
-
 
 	}
 
