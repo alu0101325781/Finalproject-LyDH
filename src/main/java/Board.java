@@ -22,6 +22,8 @@ public class Board {
 	private List<List<Tile>> tiles;			// board
 
 	private static int dificultad ;  // Nueva variable para almacenar la dificultad
+	private static int modo;		// Nueva variable para almacenar el modo
+
 
 
 	//Gestión de dificultad, generador de tiles (Tocado también en el newRandomTile())
@@ -45,7 +47,9 @@ public class Board {
 	public static void setDificultad(int dificultad) {
 		Board.dificultad = dificultad;
 	}
-
+	public static void setModo(int modo) {
+		Board.modo = modo;
+	}
 	private void initialize() {
 		for (int row = 0; row < this.size; row++) {
 			tiles.add(new ArrayList<>());
@@ -217,7 +221,7 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesCols(row);
-			if(mode == true) {
+			if(modo == 0) {
 				moved = mergeTiles(moved);
 			} else {
 				moved = mergeTilesMode1(moved);
@@ -236,7 +240,7 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesCols(row);
-			if(mode == true) {
+			if(modo == 0) {
 				moved = mergeTiles(moved);
 			} else {
 				moved = mergeTilesMode1(moved);
@@ -255,7 +259,7 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesRows(row);
-			if(mode == true) {
+			if(modo == 0) {
 				moved = mergeTiles(moved);
 			} else {
 				moved = mergeTilesMode1(moved);
@@ -274,7 +278,7 @@ public class Board {
 		for (int row = 0; row < size; row++) {
 
 			moved = removeEmptyTilesRows(row);
-			if(mode == true) {
+			if(modo == 0) {
 				moved = mergeTiles(moved);
 			} else {
 				moved = mergeTilesMode1(moved);

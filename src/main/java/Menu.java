@@ -84,7 +84,7 @@ public class Menu extends JFrame {
             difficultyButton.addActionListener( e -> {
                 Board.setDificultad(setDifficulty(difficulty));
                 difficultyFrame.dispose();
-                openGameWindow(isDarkMode);
+                openModeWindow(isDarkMode);
             });
             difficultyPanel.add(difficultyButton);
         }
@@ -109,6 +109,42 @@ public class Menu extends JFrame {
                 return 5;
             default:
                 return 2; // Default to normal difficulty
+        }
+    }
+
+    private void openModeWindow(boolean isDarkMode) {
+        JFrame modeFrame = new JFrame("Select Mode");
+        modeFrame.setSize(300, 250);
+        modeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        modeFrame.setResizable(false);
+        modeFrame.setLocationRelativeTo(null);
+
+        JPanel modePanel = new JPanel(new GridLayout(4, 1, 10, 10));
+        modePanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        String[] modes = {"Normal", "Sin Fin"};
+
+        for (String mode : modes) {
+            JButton modeButton = createStyledButton(mode, Color.GRAY, Color.WHITE);
+            modeButton.addActionListener( e -> {
+                Board.setModo(setMode(mode));
+                modeFrame.dispose();
+                openGameWindow(isDarkMode);
+            });
+            modePanel.add(modeButton);
+        }
+
+
+        modeFrame.add(modePanel);
+        modeFrame.setVisible(true);
+
+    }
+
+    private static int setMode(String modes) {
+        if(modes == "Normal") {
+            return 0;
+        } else {
+            return 1;
         }
     }
 
