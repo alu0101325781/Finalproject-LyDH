@@ -32,12 +32,11 @@ public class Board {
 
 
 
-	public Board(int size, boolean mode) {
+	public Board(int size) {
 		super();
 		this.size = size;
 		this.emptyTiles = this.size * this.size;
 		this.tiles = new ArrayList<>();
-		this.mode = mode;
 
 
 
