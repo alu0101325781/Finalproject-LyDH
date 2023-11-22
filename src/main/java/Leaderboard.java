@@ -7,6 +7,7 @@ import java.util.List;
 public class Leaderboard {
     private static final String FILENAME = "leaderboard.txt";
     private static final String SEPARATOR = " ";
+    private static final boolean DEBUG_MODE = false;
 
     /**
      * Load the leaderboard from the file
@@ -31,7 +32,7 @@ public class Leaderboard {
         } catch (FileNotFoundException e) {
             createFile();
         } catch (IOException e) {
-            handleIOException(e);
+            System.out.println("Error: " + e.getMessage());
         }
         return players;
     }
@@ -47,7 +48,7 @@ public class Leaderboard {
                 fw.write(player.getName() + SEPARATOR + player.getScore() + "\n");
             }
         } catch (IOException e) {
-            handleIOException(e);
+            System.out.println("Error: " + e.getMessage());
         }
     }
 
@@ -59,21 +60,6 @@ public class Leaderboard {
         try {
             file.createNewFile();
         } catch (IOException e) {
-            handleIOException(e);
-        }
-    }
-
-    /**
-     * Handle IOException, log or handle the exception according to your needs
-     *
-     * @param e IOException
-     */
-    private static void handleIOException(IOException e) {
-        if (DEBUG_MODE) {
-            // Log the exception or handle it in a way suitable for debugging
-            e.printStackTrace();
-        } else {
-            // Handle the exception in a way suitable for a release build
             System.out.println("Error: " + e.getMessage());
         }
     }
