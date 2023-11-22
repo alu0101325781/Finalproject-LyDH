@@ -1,0 +1,101 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{}%
+\contentsline {section}{\numberline {3.1}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Board Class Reference}{5}{}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{6}{}%
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Board()}{6}{}%
+\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}getScore()}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}getSize()}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}getTileAt()}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}getTiles()}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}getWonOrLost()}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}isGameOver()}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.7}moveDown()}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.8}moveLeft()}{7}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.9}moveRight()}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.10}moveUp()}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.11}remTileAt()}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.12}setDificultad()}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.13}setMode()}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.14}setSize()}{8}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.15}setTileAt()}{9}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.16}setTiles()}{9}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.17}setWonOrLost()}{9}{}%
+\contentsline {subsubsection}{\numberline {3.1.3.18}show()}{9}{}%
+\contentsline {section}{\numberline {3.2}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Color\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scheme Class Reference}{10}{}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{10}{}%
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{10}{}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}ColorScheme()}{10}{}%
+\contentsline {subsection}{\numberline {3.2.3}Member Function Documentation}{10}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}getTileBackground()}{10}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}getTileColor()}{11}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}updateColors()}{11}{}%
+\contentsline {section}{\numberline {3.3}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controls Class Reference}{12}{}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{12}{}%
+\contentsline {subsection}{\numberline {3.3.2}Member Function Documentation}{12}{}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}bind()}{12}{}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}keyTyped()}{13}{}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}unbind()}{13}{}%
+\contentsline {section}{\numberline {3.4}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Game Class Reference}{13}{}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{13}{}%
+\contentsline {section}{\numberline {3.5}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Grid Class Reference}{14}{}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{14}{}%
+\contentsline {subsection}{\numberline {3.5.2}Constructor \& Destructor Documentation}{14}{}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Grid()}{14}{}%
+\contentsline {subsection}{\numberline {3.5.3}Member Function Documentation}{15}{}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}paintComponent()}{15}{}%
+\contentsline {section}{\numberline {3.6}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Leaderboard Class Reference}{15}{}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{15}{}%
+\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{15}{}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}addPlayer()}{15}{}%
+\contentsline {subsubsection}{\numberline {3.6.2.2}loadLeaderboard()}{16}{}%
+\contentsline {subsubsection}{\numberline {3.6.2.3}printLeaderboard()}{16}{}%
+\contentsline {subsubsection}{\numberline {3.6.2.4}saveLeaderboard()}{16}{}%
+\contentsline {subsubsection}{\numberline {3.6.2.5}sortPlayers()}{16}{}%
+\contentsline {section}{\numberline {3.7}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main Class Reference}{16}{}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{17}{}%
+\contentsline {section}{\numberline {3.8}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Menu Class Reference}{17}{}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{17}{}%
+\contentsline {subsection}{\numberline {3.8.2}Constructor \& Destructor Documentation}{18}{}%
+\contentsline {subsubsection}{\numberline {3.8.2.1}Menu()}{18}{}%
+\contentsline {section}{\numberline {3.9}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Player Class Reference}{18}{}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{18}{}%
+\contentsline {subsection}{\numberline {3.9.2}Constructor \& Destructor Documentation}{18}{}%
+\contentsline {subsubsection}{\numberline {3.9.2.1}Player()}{18}{}%
+\contentsline {subsection}{\numberline {3.9.3}Member Function Documentation}{18}{}%
+\contentsline {subsubsection}{\numberline {3.9.3.1}getName()}{18}{}%
+\contentsline {subsubsection}{\numberline {3.9.3.2}getScore()}{19}{}%
+\contentsline {section}{\numberline {3.10}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Round\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Button Class Reference}{19}{}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{20}{}%
+\contentsline {subsection}{\numberline {3.10.2}Constructor \& Destructor Documentation}{20}{}%
+\contentsline {subsubsection}{\numberline {3.10.2.1}RoundButton()}{20}{}%
+\contentsline {subsection}{\numberline {3.10.3}Member Function Documentation}{20}{}%
+\contentsline {subsubsection}{\numberline {3.10.3.1}paintBorder()}{20}{}%
+\contentsline {subsubsection}{\numberline {3.10.3.2}paintComponent()}{20}{}%
+\contentsline {section}{\numberline {3.11}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tile Class Reference}{21}{}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{21}{}%
+\contentsline {subsection}{\numberline {3.11.2}Constructor \& Destructor Documentation}{21}{}%
+\contentsline {subsubsection}{\numberline {3.11.2.1}Tile()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{21}{}%
+\contentsline {subsubsection}{\numberline {3.11.2.2}Tile()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{21}{}%
+\contentsline {subsubsection}{\numberline {3.11.2.3}Tile()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{21}{}%
+\contentsline {subsection}{\numberline {3.11.3}Member Function Documentation}{22}{}%
+\contentsline {subsubsection}{\numberline {3.11.3.1}getValue()}{22}{}%
+\contentsline {subsubsection}{\numberline {3.11.3.2}hasMoved()}{22}{}%
+\contentsline {subsubsection}{\numberline {3.11.3.3}isEmpty()}{22}{}%
+\contentsline {subsubsection}{\numberline {3.11.3.4}merging()}{22}{}%
+\contentsline {subsubsection}{\numberline {3.11.3.5}setPosition()}{23}{}%
+\contentsline {subsubsection}{\numberline {3.11.3.6}setValue()}{23}{}%
+\contentsline {subsubsection}{\numberline {3.11.3.7}toString()}{23}{}%
+\contentsline {section}{\numberline {3.12}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window Class Reference}{24}{}%
+\contentsline {subsection}{\numberline {3.12.1}Detailed Description}{24}{}%
+\contentsline {subsection}{\numberline {3.12.2}Constructor \& Destructor Documentation}{24}{}%
+\contentsline {subsubsection}{\numberline {3.12.2.1}Window()}{24}{}%
+\contentsline {subsection}{\numberline {3.12.3}Member Function Documentation}{25}{}%
+\contentsline {subsubsection}{\numberline {3.12.3.1}getHeight()}{25}{}%
+\contentsline {subsubsection}{\numberline {3.12.3.2}getWidth()}{25}{}%
+\contentsline {chapter}{Index}{27}{}%

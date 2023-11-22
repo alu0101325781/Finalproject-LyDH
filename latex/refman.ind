@@ -1,0 +1,209 @@
+\begin{theindex}
+
+  \item {addPlayer}
+    \subitem {main.java.Leaderboard}, 15
+
+  \indexspace
+
+  \item {bind}
+    \subitem {main.java.Controls}, 12
+  \item {Board}
+    \subitem {main.java.Board}, 6
+
+  \indexspace
+
+  \item {ColorScheme}
+    \subitem {main.java.ColorScheme}, 10
+
+  \indexspace
+
+  \item {getHeight}
+    \subitem {main.java.Window}, 25
+  \item {getName}
+    \subitem {main.java.Player}, 18
+  \item {getScore}
+    \subitem {main.java.Board}, 6
+    \subitem {main.java.Player}, 19
+  \item {getSize}
+    \subitem {main.java.Board}, 6
+  \item {getTileAt}
+    \subitem {main.java.Board}, 6
+  \item {getTileBackground}
+    \subitem {main.java.ColorScheme}, 10
+  \item {getTileColor}
+    \subitem {main.java.ColorScheme}, 11
+  \item {getTiles}
+    \subitem {main.java.Board}, 7
+  \item {getValue}
+    \subitem {main.java.Tile}, 22
+  \item {getWidth}
+    \subitem {main.java.Window}, 25
+  \item {getWonOrLost}
+    \subitem {main.java.Board}, 7
+  \item {Grid}
+    \subitem {main.java.Grid}, 14
+
+  \indexspace
+
+  \item {hasMoved}
+    \subitem {main.java.Tile}, 22
+
+  \indexspace
+
+  \item {isEmpty}
+    \subitem {main.java.Tile}, 22
+  \item {isGameOver}
+    \subitem {main.java.Board}, 7
+
+  \indexspace
+
+  \item {keyTyped}
+    \subitem {main.java.Controls}, 12
+
+  \indexspace
+
+  \item {loadLeaderboard}
+    \subitem {main.java.Leaderboard}, 15
+
+  \indexspace
+
+  \item {main.java.Board}, 5
+    \subitem {Board}, 6
+    \subitem {getScore}, 6
+    \subitem {getSize}, 6
+    \subitem {getTileAt}, 6
+    \subitem {getTiles}, 7
+    \subitem {getWonOrLost}, 7
+    \subitem {isGameOver}, 7
+    \subitem {moveDown}, 7
+    \subitem {moveLeft}, 7
+    \subitem {moveRight}, 7
+    \subitem {moveUp}, 8
+    \subitem {remTileAt}, 8
+    \subitem {setDificultad}, 8
+    \subitem {setMode}, 8
+    \subitem {setSize}, 8
+    \subitem {setTileAt}, 9
+    \subitem {setTiles}, 9
+    \subitem {setWonOrLost}, 9
+    \subitem {show}, 9
+  \item {main.java.ColorScheme}, 10
+    \subitem {ColorScheme}, 10
+    \subitem {getTileBackground}, 10
+    \subitem {getTileColor}, 11
+    \subitem {updateColors}, 11
+  \item {main.java.Controls}, 12
+    \subitem {bind}, 12
+    \subitem {keyTyped}, 12
+    \subitem {unbind}, 13
+  \item {main.java.Game}, 13
+  \item {main.java.Grid}, 14
+    \subitem {Grid}, 14
+    \subitem {paintComponent}, 15
+  \item {main.java.Leaderboard}, 15
+    \subitem {addPlayer}, 15
+    \subitem {loadLeaderboard}, 15
+    \subitem {printLeaderboard}, 16
+    \subitem {saveLeaderboard}, 16
+    \subitem {sortPlayers}, 16
+  \item {main.java.Main}, 16
+  \item {main.java.Menu}, 17
+    \subitem {Menu}, 18
+  \item {main.java.Player}, 18
+    \subitem {getName}, 18
+    \subitem {getScore}, 19
+    \subitem {Player}, 18
+  \item {main.java.RoundButton}, 19
+    \subitem {paintBorder}, 20
+    \subitem {paintComponent}, 20
+    \subitem {RoundButton}, 20
+  \item {main.java.Tile}, 21
+    \subitem {getValue}, 22
+    \subitem {hasMoved}, 22
+    \subitem {isEmpty}, 22
+    \subitem {merging}, 22
+    \subitem {setPosition}, 22
+    \subitem {setValue}, 23
+    \subitem {Tile}, 21
+    \subitem {toString}, 23
+  \item {main.java.Window}, 24
+    \subitem {getHeight}, 25
+    \subitem {getWidth}, 25
+    \subitem {Window}, 24
+  \item {Menu}
+    \subitem {main.java.Menu}, 18
+  \item {merging}
+    \subitem {main.java.Tile}, 22
+  \item {moveDown}
+    \subitem {main.java.Board}, 7
+  \item {moveLeft}
+    \subitem {main.java.Board}, 7
+  \item {moveRight}
+    \subitem {main.java.Board}, 7
+  \item {moveUp}
+    \subitem {main.java.Board}, 8
+
+  \indexspace
+
+  \item {paintBorder}
+    \subitem {main.java.RoundButton}, 20
+  \item {paintComponent}
+    \subitem {main.java.Grid}, 15
+    \subitem {main.java.RoundButton}, 20
+  \item {Player}
+    \subitem {main.java.Player}, 18
+  \item {printLeaderboard}
+    \subitem {main.java.Leaderboard}, 16
+
+  \indexspace
+
+  \item {remTileAt}
+    \subitem {main.java.Board}, 8
+  \item {RoundButton}
+    \subitem {main.java.RoundButton}, 20
+
+  \indexspace
+
+  \item {saveLeaderboard}
+    \subitem {main.java.Leaderboard}, 16
+  \item {setDificultad}
+    \subitem {main.java.Board}, 8
+  \item {setMode}
+    \subitem {main.java.Board}, 8
+  \item {setPosition}
+    \subitem {main.java.Tile}, 22
+  \item {setSize}
+    \subitem {main.java.Board}, 8
+  \item {setTileAt}
+    \subitem {main.java.Board}, 9
+  \item {setTiles}
+    \subitem {main.java.Board}, 9
+  \item {setValue}
+    \subitem {main.java.Tile}, 23
+  \item {setWonOrLost}
+    \subitem {main.java.Board}, 9
+  \item {show}
+    \subitem {main.java.Board}, 9
+  \item {sortPlayers}
+    \subitem {main.java.Leaderboard}, 16
+
+  \indexspace
+
+  \item {Tile}
+    \subitem {main.java.Tile}, 21
+  \item {toString}
+    \subitem {main.java.Tile}, 23
+
+  \indexspace
+
+  \item {unbind}
+    \subitem {main.java.Controls}, 13
+  \item {updateColors}
+    \subitem {main.java.ColorScheme}, 11
+
+  \indexspace
+
+  \item {Window}
+    \subitem {main.java.Window}, 24
+
+\end{theindex}

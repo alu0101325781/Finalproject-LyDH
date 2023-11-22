@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['paintcomponent_0',['paintComponent',['../classgame_1_1_grid.html#a89148d11b5a2b858e6a01585974f93e6',1,'game::Grid']]]
+  ['loadleaderboard_0',['loadLeaderboard',['../classmain_1_1java_1_1_leaderboard.html#a717bf7f215ce1660a50ab0d8bf6db0fd',1,'main::java::Leaderboard']]]
 ];

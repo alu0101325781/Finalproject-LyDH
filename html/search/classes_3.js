@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['Main',['../classgame_1_1_main.html',1,'game']]]
+  ['leaderboard_0',['Leaderboard',['../classmain_1_1java_1_1_leaderboard.html',1,'main::java']]]
 ];
