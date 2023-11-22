@@ -69,8 +69,13 @@ public class Leaderboard {
      * @param e IOException
      */
     private static void handleIOException(IOException e) {
-        // Log or handle the exception according to your needs
-        e.printStackTrace();
+        if (DEBUG_MODE) {
+            // Log the exception or handle it in a way suitable for debugging
+            e.printStackTrace();
+        } else {
+            // Handle the exception in a way suitable for a release build
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 
     /**
