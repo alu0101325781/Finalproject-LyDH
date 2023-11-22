@@ -1,5 +1,8 @@
 package main.java;
 
+/**
+ * Class that handles the game
+ */
 public class Game {
 	public static boolean isDarkMode;
 

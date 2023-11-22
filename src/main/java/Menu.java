@@ -7,14 +7,22 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+/** 
+ * Class Menu that handles the menu of the game
+ */
 public class Menu extends JFrame {
 
 
-
+    /**
+     * Constructor of the class Menu
+     */
     public Menu() {
         initializeUI();
     }
 
+    /**
+     * Initializes the UI
+     */
     private void initializeUI() {
         setTitle("2048");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -48,6 +56,13 @@ public class Menu extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Creates a button with a custom style
+     * @param text Text to display on the button
+     * @param backgroundColor Background color of the button
+     * @param foregroundColor Foreground color of the button
+     * @return The button with the custom style
+     */
     private RoundButton createStyledButton(String text, Color backgroundColor, Color foregroundColor) {
         RoundButton button = new RoundButton(text, backgroundColor, foregroundColor);
         button.addMouseListener(new MouseAdapter() {
@@ -67,6 +82,10 @@ public class Menu extends JFrame {
         return button;
     }
 
+    /**
+     * Opens the difficulty window
+     * @param isDarkMode True if the dark mode is enabled, false otherwise
+     */
     private void openDifficultyWindow(boolean isDarkMode) {
         JFrame difficultyFrame = new JFrame("Select Difficulty");
         difficultyFrame.setSize(300, 250);
@@ -97,6 +116,11 @@ public class Menu extends JFrame {
 
     }
 
+    /**
+     * Sets the difficulty of the game
+     * @param difficulty Difficulty of the game
+     * @return The difficulty of the game
+     */
     private int setDifficulty(String difficulty) {
         switch (difficulty) {
             case "Normal":
@@ -112,6 +136,10 @@ public class Menu extends JFrame {
         }
     }
 
+    /**
+     * Opens the mode window
+     * @param isDarkMode True if the dark mode is enabled, false otherwise
+     */
     private void openModeWindow(boolean isDarkMode) {
         JFrame modeFrame = new JFrame("Select Mode");
         modeFrame.setSize(300, 250);
@@ -140,6 +168,11 @@ public class Menu extends JFrame {
 
     }
 
+    /**
+     * Sets the mode of the game
+     * @param modes Mode of the game
+     * @return The mode of the game
+     */
     private static int setMode(String modes) {
         if(modes == "Normal") {
             return 0;
@@ -148,11 +181,18 @@ public class Menu extends JFrame {
         }
     }
 
-
+    /**
+     * Opens the game window
+     * @param isDarkMode True if the dark mode is enabled, false otherwise
+     */
     private static void openGameWindowStatic(boolean isDarkMode) {
         Game.isDarkMode = isDarkMode;
     }
 
+    /**
+     * Opens the game window
+     * @param isDarkMode True if the dark mode is enabled, false otherwise
+     */
     private void openGameWindow(boolean isDarkMode) {
         openGameWindowStatic(isDarkMode);
         dispose();

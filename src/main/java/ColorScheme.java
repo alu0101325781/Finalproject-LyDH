@@ -3,6 +3,9 @@ package main.java;
 import java.awt.Color;
 import java.util.HashMap;
 
+/**
+ * Class ColorScheme that handles the colors of the game
+ */
 public class ColorScheme {
 
     // Colores para el modo claro
@@ -19,6 +22,9 @@ public class ColorScheme {
 
     private HashMap<Integer, Color> background = new HashMap<>();
 
+    /**
+     * Set the colors of the game
+     */
     public ColorScheme() {
         if (Game.isDarkMode) {
             initDarkBackgrounds();
@@ -27,6 +33,9 @@ public class ColorScheme {
         }
     }
 
+    /**
+     * Initialize the light colors of the game
+     */
     private void initLightBackgrounds() {
         background.put(0, new Color(238, 228, 218, 90));
         background.put(2, new Color(0XEEE4DA));
@@ -49,6 +58,9 @@ public class ColorScheme {
 
     }
 
+    /**
+     * Initialize the dark colors of the game
+     */
     private void initDarkBackgrounds() {
         background.put(0, new Color(30, 30, 30, 90));
         background.put(2, new Color(0xC9EEFD)); // Light Sky Blue
@@ -64,13 +76,21 @@ public class ColorScheme {
         background.put(2048, new Color(0x4DB3F3)); // Alice Blue
     }
 
-
-
+    /**
+     * Returns the background color of the tile
+     * @param value value of the tile
+     * @return background color of the tile
+     */
     public Color getTileBackground(int value) {
         updateColors();
         return background.get(value);
     }
 
+    /**
+     * Returns the color of the tile
+     * @param value value of the tile
+     * @return color of the tile
+     */
     public Color getTileColor(int value) {
         if (Game.isDarkMode) {
             return (value <= 8) ? DARK_BRIGHT : DARK_LIGHT;
@@ -79,6 +99,11 @@ public class ColorScheme {
         }
     }
 
+    /**
+     * Returns the color of the text
+     * @param value value of the tile
+     * @return color of the text
+     */
     public void updateColors() {
         if (Game.isDarkMode) {
             initDarkBackgrounds();

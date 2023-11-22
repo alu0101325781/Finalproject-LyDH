@@ -7,10 +7,19 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
+/**
+ * Class that handles the round buttons
+ */
 public class RoundButton extends JButton {
     private Color backgroundColor;
     private Color foregroundColor;
 
+    /**
+     * Constructor of the class RoundButton
+     * @param text Text of the button
+     * @param backgroundColor Background color of the button
+     * @param foregroundColor Foreground color of the button
+     */
     public RoundButton(String text, Color backgroundColor, Color foregroundColor) {
         super(text);
         this.backgroundColor = backgroundColor;
@@ -24,6 +33,9 @@ public class RoundButton extends JButton {
         setFont(new Font("Tahoma", Font.BOLD, 20));
     }
 
+    /**
+     * Paints the button
+     */
     @Override
     protected void paintComponent(Graphics g) {
         if (getModel().isArmed()) {
@@ -36,6 +48,9 @@ public class RoundButton extends JButton {
         super.paintComponent(g);
     }
 
+    /**
+     * Paints the border of the button
+     */
     @Override
     protected void paintBorder(Graphics g) {
         int borderWidth = 2; // Adjust the thickness as needed

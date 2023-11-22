@@ -17,6 +17,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 
+/**
+ * Class Grid that handles the grid of the game
+ */
 public class Grid extends JPanel {
 
 	private static final long serialVersionUID = 1L;
@@ -29,6 +32,9 @@ public class Grid extends JPanel {
 
 	private static boolean isMouseOverButton = false;
 
+	/**
+	 * Constructor of the class Grid
+	 */
 	public Grid() {
 		super(true); // turn on doublebuffering
 
@@ -81,6 +87,10 @@ public class Grid extends JPanel {
 	});		
 	}
 
+	/**
+	 * Paints the grid
+	 * @param g2 graphics
+	 */
 	@Override
 	public void paintComponent(Graphics g2) {
 		super.paintComponent(g2);
@@ -100,6 +110,10 @@ public class Grid extends JPanel {
 		g.dispose(); // release memory
 	}
 
+	/**
+	 * Draws the button
+	 * @param g graphics
+	 */
 	private static void drawButton(Graphics g) {
 		if (isMouseOverButton) {
 			g.setColor(ColorScheme.BRIGHT.darker());
@@ -112,12 +126,20 @@ public class Grid extends JPanel {
 		g.drawString("End Game", 138, -31);
 	}
 
+	/**
+	 * Draws the trophy
+	 * @param g graphics
+	 */
 	private static void drawTrophy(Graphics g) {
 		g.setFont(new Font("Segoe UI Emoji", Font.PLAIN, 13));
 		g.setColor(new Color(000000));
 		g.drawString("🏆", -16, -64);
 	}
 
+	/**
+	 * Draws the title
+	 * @param g graphics
+	 */
 	private static void drawTitle(Graphics g) {
 		g.setFont( new Font(FONT, Font.BOLD, 38) );
 		if (Game.isDarkMode) {
@@ -128,6 +150,10 @@ public class Grid extends JPanel {
 		g.drawString("2048", WIN_MARGIN, 50);
 	}
 
+	/**
+	 * Draws the scoreboard
+	 * @param g graphics
+	 */
 	private void drawScoreBoard(Graphics2D g) {
 		int width = 80;
 		int height = 40;
@@ -141,6 +167,10 @@ public class Grid extends JPanel {
 		g.drawString(String.valueOf(Board.getScore()), xOffset + 35, yOffset + 30);
 	}
 
+	/**
+	 * Draws the background
+	 * @param g graphics
+	 */
 	private static void drawBackground(Graphics g) {
 		if(Game.isDarkMode) {
 			g.setColor(ColorScheme.DARK_WINBG);
@@ -150,6 +180,10 @@ public class Grid extends JPanel {
 		g.fillRect(0, 0, Game.WINDOW.getWidth(), Game.WINDOW.getHeight());
 	}
 
+	/**
+	 * Draws the board
+	 * @param g graphics
+	 */
 	private static void drawBoard(Graphics g) {
 		g.translate(WIN_MARGIN, 80);
 		if (Game.isDarkMode) {
@@ -166,6 +200,13 @@ public class Grid extends JPanel {
 		}
 	}
 
+	/**
+	 * Draws the tile
+	 * @param g graphics
+	 * @param tile tile
+	 * @param x x coordinate
+	 * @param y y coordinate
+	 */
 	private static void drawTile(Graphics g, Tile tile, int x, int y) {
 		int value = tile.getValue();
 		int xOffset = x * (TILE_MARGIN + TILE_SIZE) + TILE_MARGIN;
@@ -205,6 +246,9 @@ public class Grid extends JPanel {
 
 	}
 
+	/**
+	 * Ends the game
+	 */
 	private void endGame() {
 		String name = JOptionPane.showInputDialog("Enter your name: ");
 		if (name == null || name.isEmpty()) {
@@ -215,6 +259,9 @@ public class Grid extends JPanel {
 		System.exit(0);
 	}
 
+	/**
+	 * Shows the leaderboard
+	 */
 	private void showLeaderboard() {
 		String leaderboard = "Tabla de clasificación:\n\n";
 		Leaderboard.sortPlayers();

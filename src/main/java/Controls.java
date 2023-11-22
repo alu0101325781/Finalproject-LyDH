@@ -3,8 +3,14 @@ package main.java;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+/**
+ * Class that handles the keyboard input
+ */
 public class Controls implements KeyListener {
 
+	/**
+	 * Empty constructor
+	 */
 	@Override
 	public void keyTyped(KeyEvent e) {
 		// Empty because KeyListener requires it as an Interface
@@ -41,10 +47,16 @@ public class Controls implements KeyListener {
 		
 	}
 
+	/**
+	 * Binds the keyboard input to the game
+	 */
 	public void bind() {
 		Game.WINDOW.addKeyListener(this);
 	}
 
+	/**
+	 * Unbinds the keyboard input from the game
+	 */
 	public void unbind() {
 		Game.WINDOW.removeKeyListener(this);
 	}
