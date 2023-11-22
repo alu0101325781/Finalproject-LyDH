@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['isempty_0',['isEmpty',['../classgame_1_1_tile.html#a91f87d517db33aa9c660ba581b476959',1,'game::Tile']]],
-  ['isgameover_1',['isGameOver',['../classgame_1_1_board.html#ac867b528ec94b8b78e67287913febf05',1,'game::Board']]]
+  ['hasmoved_0',['hasMoved',['../classmain_1_1java_1_1_tile.html#aa38292aac8b8f46ee53ed6f9d92fdd78',1,'main::java::Tile']]]
 ];

@@ -1,0 +1,48 @@
+
+
+java:S4165¹"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(šğ¨Ä8¶Äñ‹¼1
+
+java:S4165ä"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(°à‡8¶Äñ‹¼1
+
+java:S4165Ö"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(×’™œ8¶Äñ‹¼1
+
+java:S4165Õ"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(°à‡8¶Äñ‹¼1
+
+java:S4165å"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(Ù¹œì8¶Äñ‹¼1
+
+java:S4165·"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(°à‡8¶Äñ‹¼1
+
+java:S4165¸"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(×’™œ8¶Äñ‹¼1
+
+java:S4165Ç"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(Ù¹œì8¶Äñ‹¼1
+
+java:S4165×"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(ÿë‘·8¶Äñ‹¼1
+
+java:S4165È"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(šğ¨Ä8¶Äñ‹¼1
+
+java:S4165Æ"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(°à‡8¶Äñ‹¼1
+
+java:S4165æ"cRemove this useless assignment; "moved" already holds the assigned value along all execution paths.(ÿë‘·8¶Äñ‹¼1
+K
+java:S5413`")Verify that "remove()" is used correctly.(Ö€Ñ­ıÿÿÿÿ8ĞÄñ‹¼1
+~
+java:S2234’"[Parameters to getTileAt have the same names but not the same order as the method arguments.(Å¬üÿÿÿÿ8ÔÄñ‹¼1
+~
+java:S2234“"[Parameters to getTileAt have the same names but not the same order as the method arguments.(áõ°¸üÿÿÿÿ8ÔÄñ‹¼1
+y
+java:S2234ª"[Parameters to setTileAt have the same names but not the same order as the method arguments.(¢˜éÏ8ÔÄñ‹¼1
+W
+java:S1854¹"9Remove this useless assignment to local variable "moved".(šğ¨Ä8ÔÄñ‹¼1
+W
+java:S1854È"9Remove this useless assignment to local variable "moved".(šğ¨Ä8ÔÄñ‹¼1
+W
+java:S1854×"9Remove this useless assignment to local variable "moved".(ÿë‘·8ÔÄñ‹¼1
+W
+java:S1854æ"9Remove this useless assignment to local variable "moved".(ÿë‘·8ÔÄñ‹¼1
+~
+java:S2234Œ"[Parameters to getTileAt have the same names but not the same order as the method arguments.(ËÙª‘øÿÿÿÿ8áÄñ‹¼1
+X	java:S125£"<This block of commented-out lines of code should be removed.(·ÇÈ8áÄñ‹¼1
+F	java:S106±"+Replace this use of System.out by a logger.(şÛîüÿÿÿÿ
+F	java:S106²"+Replace this use of System.out by a logger.(‰ºˆŠüÿÿÿÿ
+F	java:S106µ"+Replace this use of System.out by a logger.(“ªë¼şÿÿÿÿ
+F	java:S106·"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ

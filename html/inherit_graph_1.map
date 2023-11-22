@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classgame_1_1_color_scheme.html" title=" " alt="" coords="5,5,141,32"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,70,57"/>
+<area shape="rect" id="Node000001" href="$classmain_1_1java_1_1_menu.html" title=" " alt="" coords="125,5,236,32"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="85,33,124,26,125,31,85,38"/>
+<area shape="rect" id="Node000002" href="$classmain_1_1java_1_1_window.html" title=" " alt="" coords="118,56,243,83"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="86,50,118,56,117,61,85,55"/>
 </map>

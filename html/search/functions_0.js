@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['bind_0',['bind',['../classgame_1_1_controls.html#a3f8c6554fd5a481888f8c75d7f1e8867',1,'game::Controls']]],
-  ['board_1',['Board',['../classgame_1_1_board.html#aa1d3ba0e600dd5156af7e0c7525c9eed',1,'game::Board']]]
+  ['addplayer_0',['addPlayer',['../classmain_1_1java_1_1_leaderboard.html#a0db05df5091221e77e40c2f82fc02265',1,'main::java::Leaderboard']]]
 ];

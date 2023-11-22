@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['keypressed_0',['keyPressed',['../classgame_1_1_controls.html#a680d985a37bb4fa9367089f9ddaf5aec',1,'game::Controls']]],
-  ['keyreleased_1',['keyReleased',['../classgame_1_1_controls.html#af4171abadf60129a05853ab4a4d22b23',1,'game::Controls']]],
-  ['keytyped_2',['keyTyped',['../classgame_1_1_controls.html#a11d5835cfd77398a92018ab6fde8b8d2',1,'game::Controls']]]
+  ['remtileat_0',['remTileAt',['../classmain_1_1java_1_1_board.html#a93440f8a5d3d17a76dffacbeda09a36a',1,'main::java::Board']]],
+  ['roundbutton_1',['roundbutton',['../classmain_1_1java_1_1_round_button.html',1,'main.java.RoundButton'],['../classmain_1_1java_1_1_round_button.html#a8f0bdb0fb00dd356c09b689805eae0e5',1,'main.java.RoundButton.RoundButton()']]]
 ];

@@ -1,9 +1,14 @@
 package main.java;
 
+/**
+ * Class that handles the game
+ */
 public class Game {
-	protected Game() {} // prevents instantiation (static class
+	public static boolean isDarkMode;
 
-	public static final ColorScheme COLORS = new ColorScheme();
+	protected Game() { } // prevents instantiation (static class
+
+	public static ColorScheme COLORS = new ColorScheme();
 	public static final Window WINDOW = new Window("2048");
 	public static final Controls CONTROLS = new Controls();
 	public static final Board BOARD = new Board(4);

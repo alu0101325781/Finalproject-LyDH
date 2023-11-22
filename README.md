@@ -9,7 +9,9 @@ The game is played on a simple 4x4 grid with tiles of different colors and a num
 If two tiles with the same number "collide" during a movement, they will combine and make a new tile whose number will be the addition of the two numbers in the original tiles. For example, if 
 two tiles that have the number 4 collide, they will combine in a new tile and make the number 8).
 
-## Link to SonarCloud
+***Versión funcional con las funcionalidades añadidas.***
+
+## Enlace a SonarCloud
 https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH
 
 ## Group 03

@@ -29,6 +29,10 @@ public class Window extends JFrame {
 	private int xWidth = 375;
 	private int yHeight = 450;
 
+	/**
+	 * Constructor of the class Window
+	 * @param title Title of the window
+	 */
 	public Window(String title) {
 		super(title); // Window title
 
@@ -52,6 +56,11 @@ public class Window extends JFrame {
 
 	}
 
+	/**
+	 * Creates a simple button
+	 * @param text Text of the button
+	 * @return Button
+	 */
 	private static JButton createSimpleButton(String text) {
 		JButton button = new JButton(text);
 		button.setForeground(Color.BLACK);
@@ -63,11 +72,19 @@ public class Window extends JFrame {
 		return button;
 	}
 
+	/**
+	 * Get the width of the window
+	 * @return Width of the window
+	 */
 	@Override
 	public int getWidth() {
 		return xWidth;
 	}
 
+	/**
+	 * Get the height of the window
+	 * @return Height of the window
+	 */
 	@Override
 	public int getHeight() {
 		return yHeight;
