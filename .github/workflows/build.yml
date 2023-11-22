@@ -1,8 +1,0 @@
-name: SonarCloud Analysis
-on:
-  push:
-    branches:
-      - master
-      - Estilo
-      - Dificultad
-      - clasificacion
