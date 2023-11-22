@@ -174,7 +174,7 @@ public class Menu extends JFrame {
      * @return The mode of the game
      */
     private static int setMode(String modes) {
-        if(modes == "Normal") {
+        if("Normal".equals(modes)) {
             return 0;
         } else {
             return 1;

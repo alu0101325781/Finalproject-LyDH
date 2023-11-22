@@ -55,10 +55,17 @@ public class Leaderboard {
     /**
      * Create the file if it does not exist
      */
-    private static void createFile() {
+     private static void createFile() {
         File file = new File(FILENAME);
         try {
-            file.createNewFile();
+            boolean created = file.createNewFile();
+            if (created) {
+                System.out.println("File created successfully.");
+                // Realiza alguna acción adicional si es necesario
+            } else {
+                System.out.println("File already exists.");
+                // Realiza alguna acción adicional si es necesario
+            }
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
