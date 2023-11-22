@@ -1,17 +1,18 @@
 # 2048 game in Java
 
 ![Logo](logo.png) 
-## Acerca de 2048
-Es un juego en línea y para telefonía móvil creado en marzo de 2014 por el desarrollador web italiano de 19 años Gabriele Cirulli, cuyo objetivo es deslizar baldosas en una cuadrícula para combinarlas y crear una baldosa con el número 2048.
-Cirulli creó el juego durante un fin de semana8​ como prueba para determinar si era capaz de programar un juego desde cero.
-### Modo de juego
-Es jugado en una cuadrícula gris simple de 4x4 con baldosas de distintos colores y con un número en su centro.
-Si dos baldosas con el mismo número "colisionan" durante un movimiento, se combinarán en una nueva baldosa, cuyo número será el equivalente a la suma de los números de las dos baldosas originales (es decir, si dos baldosas con el número 4 colisionan, se combinarán en una baldosa con el número 8).
+## About 2048
+This is an online mobile game created in march of 2014 by the italian developper Gabriele Cirulli. The objective is sliding the tiles and combine them to create the final tile that has the number 2048 on it.
+Cirulli created this game in only a weekend. It was a personal challenge. He wanted to see if he was able of programming a game from scratch.
+### Game mode
+The game is played on a simple 4x4 grid with tiles of different colors and a number on them.
+If two tiles with the same number "collide" during a movement, they will combine and make a new tile whose number will be the addition of the two numbers in the original tiles. For example, if 
+two tiles that have the number 4 collide, they will combine in a new tile and make the number 8).
 
-## Enlace a SonarCloud
+## Link to SonarCloud
 https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH
 
-## Grupo 03
+## Group 03
 
 Francesco Marelli
 
@@ -23,7 +24,7 @@ Nahia Ganuza Izaguirre
 
 ![screenshot](screen.png)
 
-## Métricas de Sonarcloud
+## SonarCloud's metrics
 
 [![SonarCloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=alert_status)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
 [![SonarCloud Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=reliability_rating)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
