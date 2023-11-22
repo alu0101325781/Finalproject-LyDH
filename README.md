@@ -19,7 +19,7 @@ Francesco Marelli
 
 Enrique Suárez Hernández
 
-Victor Cánovas Del Pino
+Víctor Cánovas Del Pino
 
 Nahia Ganuza Izaguirre
 
