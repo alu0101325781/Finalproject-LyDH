@@ -92,7 +92,7 @@ public class Menu extends JFrame {
     private void openDifficultyWindow(boolean isDarkMode) {
         JFrame difficultyFrame = new JFrame("Select Difficulty");
         difficultyFrame.setSize(300, 250);
-        difficultyFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        difficultyFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         difficultyFrame.setResizable(false);
         difficultyFrame.setLocationRelativeTo(null);
 
@@ -147,7 +147,7 @@ public class Menu extends JFrame {
     private void openModeWindow(boolean isDarkMode) {
         JFrame modeFrame = new JFrame("Select Mode");
         modeFrame.setSize(300, 250);
-        modeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        modeFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         modeFrame.setResizable(false);
         modeFrame.setLocationRelativeTo(null);
 
