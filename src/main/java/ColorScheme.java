@@ -74,12 +74,12 @@ public class ColorScheme {
         background.put(512, new Color(0x7DD8E3)); // Light Cyan
         background.put(1024, new Color(0x65B9DE)); // Light Cyan
         background.put(2048, new Color(0x4DB3F3)); // Alice Blue
-        background.put(4096, 	new Color (0xC9EEFD));
-        background.put(8192, 	new Color (0x99F1F1));
-        background.put(16384, 	new Color (0x96F3F3));
-        background.put(32768, 	new Color (0xA3BCEC));
-        background.put(65536, 	new Color (0x9CC2EE));
-        background.put(131072, 	new Color (0x7DD8E3));
+        background.put(4096, new Color (0xC9EEFD));
+        background.put(8192, new Color (0x99F1F1));
+        background.put(16384, new Color (0x96F3F3));
+        background.put(32768, new Color (0xA3BCEC));
+        background.put(65536, new Color (0x9CC2EE));
+        background.put(131072, new Color (0x7DD8E3));
     }
 
     /**
