@@ -263,11 +263,19 @@ public class Grid extends JPanel {
 	 * Shows the leaderboard
 	 */
 	private void showLeaderboard() {
-		String leaderboard = "Tabla de clasificación:\n\n";
+		StringBuilder leaderboardBuilder = new StringBuilder("Tabla de clasificación:\n\n");
 		Leaderboard.sortPlayers();
 		for (Player player : Leaderboard.loadLeaderboard()) {
-			leaderboard += player.getName() + " " + player.getScore() + "\n";
+			leaderboardBuilder.append(player.getName()).append(" ").append(player.getScore()).append("\n");
 		}
-		JOptionPane.showMessageDialog(null, leaderboard, "Leaderboard", JOptionPane.INFORMATION_MESSAGE);
+
+		// Display the leaderboard using JOptionPane
+		JOptionPane.showMessageDialog(
+			null,
+			leaderboardBuilder.toString(),
+			"Leaderboard",
+			JOptionPane.INFORMATION_MESSAGE
+		);
 	}
+
 }
