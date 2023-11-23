@@ -2,8 +2,6 @@ package main.java;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -11,6 +9,11 @@ import java.awt.event.MouseEvent;
  * Class Menu that handles the menu of the game
  */
 public class Menu extends JFrame {
+
+        private static final String NORMAL = "Normal";
+        private static final String DIFICIL = "Difícil";
+        private static final String MUYDIFICIL = "Muy Difícil";
+        private static final String IMPOSIBLE = "Imposible";
 
 
     /**
@@ -96,7 +99,8 @@ public class Menu extends JFrame {
         JPanel difficultyPanel = new JPanel(new GridLayout(4, 1, 10, 10));
         difficultyPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        String[] difficulties = {"Normal", "Difícil", "Muy Difícil", "Imposible"};
+
+        String[] difficulties = {NORMAL, DIFICIL, MUYDIFICIL, IMPOSIBLE};
 
         for (String difficulty : difficulties) {
             JButton difficultyButton = createStyledButton(difficulty, Color.GRAY, Color.WHITE);
@@ -123,13 +127,13 @@ public class Menu extends JFrame {
      */
     private int setDifficulty(String difficulty) {
         switch (difficulty) {
-            case "Normal":
+            case NORMAL:
                 return 2;
-            case "Difícil":
+            case DIFICIL:
                 return 3;
-            case "Muy Difícil":
+            case MUYDIFICIL:
                 return 4;
-            case "Imposible":
+            case IMPOSIBLE:
                 return 5;
             default:
                 return 2; // Default to normal difficulty
@@ -150,7 +154,7 @@ public class Menu extends JFrame {
         JPanel modePanel = new JPanel(new GridLayout(4, 1, 10, 10));
         modePanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        String[] modes = {"Normal", "Sin Fin"};
+        String[] modes = {NORMAL, "Sin Fin"};
 
         for (String mode : modes) {
             JButton modeButton = createStyledButton(mode, Color.GRAY, Color.WHITE);
@@ -174,7 +178,7 @@ public class Menu extends JFrame {
      * @return The mode of the game
      */
     private static int setMode(String modes) {
-        if("Normal".equals(modes)) {
+        if(NORMAL.equals(modes)) {
             return 0;
         } else {
             return 1;

@@ -7,7 +7,9 @@ import java.util.List;
 public class Leaderboard {
     private static final String FILENAME = "leaderboard.txt";
     private static final String SEPARATOR = " ";
-    private static final boolean DEBUG_MODE = false;
+    private static final String ERROR = "Error: ";
+
+    private Leaderboard(){}
 
     /**
      * Load the leaderboard from the file
@@ -26,13 +28,13 @@ public class Leaderboard {
                     int score = Integer.parseInt(parts[1]);
                     players.add(new Player(name, score));
                 } else {
-                    System.out.println("Error: " + line);
+                    System.out.println(ERROR + line);
                 }
             }
         } catch (FileNotFoundException e) {
             createFile();
         } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println(ERROR + e.getMessage());
         }
         return players;
     }
@@ -48,7 +50,7 @@ public class Leaderboard {
                 fw.write(player.getName() + SEPARATOR + player.getScore() + "\n");
             }
         } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println(ERROR + e.getMessage());
         }
     }
 
@@ -67,7 +69,7 @@ public class Leaderboard {
                 // Realiza alguna acción adicional si es necesario
             }
         } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println(ERROR + e.getMessage());
         }
     }
 

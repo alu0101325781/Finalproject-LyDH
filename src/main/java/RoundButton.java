@@ -5,14 +5,12 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.RenderingHints;
 
 /**
  * Class that handles the round buttons
  */
 public class RoundButton extends JButton {
     private Color backgroundColor;
-    private Color foregroundColor;
 
     /**
      * Constructor of the class RoundButton
@@ -23,7 +21,6 @@ public class RoundButton extends JButton {
     public RoundButton(String text, Color backgroundColor, Color foregroundColor) {
         super(text);
         this.backgroundColor = backgroundColor;
-        this.foregroundColor = foregroundColor;
 
         setContentAreaFilled(false);
         setFocusPainted(false);

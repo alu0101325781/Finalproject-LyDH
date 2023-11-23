@@ -16,7 +16,6 @@ public class Board {
 	private static int score; 						// game score
 	private int emptyTiles;					// number of tiles with zero value
 	private boolean gameover = false; 		// game is over when 2048 tile is found
-	private boolean mode; 					// true modo normal false modo sin fin
 	private String wonOrLost;				// won or lost
 	private boolean genNewTile = false;		// generate new tile when any tile moved
 	private List<List<Tile>> tiles;			// board
@@ -93,13 +92,6 @@ public class Board {
 		this.size = size;
 	}
 
-	/**
-	 * Set game mode
-	 * @return game mode
-	 */
-	public void setMode(boolean mode) {
-		this.mode = mode;
-	}
 
 	/**
 	 * Returns a list of lists of {@link Tile}
@@ -182,7 +174,6 @@ public class Board {
 	 * @return merged sequence of {@link Tile}
 	 */
 	private List<Tile> mergeTilesMode1(List<Tile> sequence) {
-		//System.out.printf("Estas en el modo sin fin");
 		for (int l = 0; l < sequence.size() - 1; l++) {
 			if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
 				int value;
