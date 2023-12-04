@@ -1,6 +1,7 @@
 package es.ull;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
@@ -10,6 +11,11 @@ import java.util.List;
 public class LeaderboardTest {
       
       private Leaderboard leaderboard = new Leaderboard();
+
+      @BeforeEach
+      public void setUp() {
+          leaderboard.clearLeaderboard();
+      }
 
       @Test
       public void testConstructor() {
