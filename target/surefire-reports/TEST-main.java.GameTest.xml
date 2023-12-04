@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="main.java.GameTest" time="0.356" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="main.java.GameTest" time="0.293" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\victo\AppData\Local\Temp\surefire4908366457564476421\surefirebooter7263352672042262684.jar C:\Users\victo\AppData\Local\Temp\surefire4908366457564476421 2023-12-04T17-30-49_064-jvmRun1 surefire6542153227984701585tmp surefire_014095053351376998733tmp"/>
+    <property name="sun.java.command" value="C:\Users\victo\AppData\Local\Temp\surefire5109755558308542994\surefirebooter11454304454475023955.jar C:\Users\victo\AppData\Local\Temp\surefire5109755558308542994 2023-12-04T17-37-37_241-jvmRun1 surefire13869073869041641540tmp surefire_015491261539248109875tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\victo\Downloads\LDH\Finalproject-LyDH\target\test-classes;C:\Users\victo\Downloads\LDH\Finalproject-LyDH\target\classes;C:\Users\victo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\victo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\victo\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\victo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\victo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\victo\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\victo\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\victo\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\victo\AppData\Local\Temp\surefire4908366457564476421\surefirebooter7263352672042262684.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\victo\AppData\Local\Temp\surefire5109755558308542994\surefirebooter11454304454475023955.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-86"/>
@@ -56,5 +56,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testGame" classname="main.java.GameTest" time="0.351"/>
+  <testcase name="testGame" classname="main.java.GameTest" time="0.285"/>
 </testsuite>
