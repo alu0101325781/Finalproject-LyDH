@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: main.java.GameTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.167 s <<< FAILURE! - in main.java.GameTest
-testGame  Time elapsed: 0.153 s  <<< ERROR!
-java.lang.ExceptionInInitializerError
-	at main.java.GameTest.testGame(GameTest.java:13)
-Caused by: java.awt.HeadlessException: 
-
-No X11 DISPLAY variable was set, but this program performed an operation which requires it.
-	at main.java.GameTest.testGame(GameTest.java:13)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.356 s - in main.java.GameTest
