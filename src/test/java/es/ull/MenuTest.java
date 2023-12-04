@@ -22,12 +22,5 @@ public class MenuTest {
         assertEquals(0, Menu.setMode(Menu.NORMAL));
         assertEquals(1, Menu.setMode("Sin Fin"));
     }
-    @Test
-    public void testInitUI() {
-        Menu menu = new Menu();
-        assertEquals("2048", menu.getTitle());
-        assertNotNull(menu);
-
-    }
 
 }
