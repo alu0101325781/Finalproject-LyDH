@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.awt.event.KeyEvent;
 
 public class BoardTest {
+    @Test
     public void testInitialBoardSetup() {
         Board board = new Board(4);
 
