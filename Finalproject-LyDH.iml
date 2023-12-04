@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
+<module version="4">
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/es" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/es/ull" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java/es" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java/es/ull" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
     </content>
-  </component>
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="8fb1f17c-9c23-4177-9f37-9b78a0776a28" />
   </component>
 </module>
