@@ -8,8 +8,6 @@ public class ColorSchemeTest {
     public void testUpdateColors() {
         ColorScheme colorScheme = new ColorScheme();
         Game.isDarkMode = false;
-
-        //colorScheme.updateColors();
         assertEquals(new Color(238,228,218,90), colorScheme.getTileBackground(0));
         assertEquals(new Color(0XEEE4DA), colorScheme.getTileBackground(2));
         assertEquals(new Color(0XEDE0C8), colorScheme.getTileBackground(4));
@@ -23,4 +21,5 @@ public class ColorSchemeTest {
         assertEquals(new Color(0XEDC53F), colorScheme.getTileBackground(1024));
         colorScheme.updateColors();
     }
+
 }
