@@ -6,6 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/es/ull" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java/es" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java/es/ull" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
     </content>
   </component>
   <component name="SonarLintModuleSettings">
