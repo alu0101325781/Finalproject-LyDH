@@ -7,13 +7,11 @@ import java.awt.event.KeyEvent;
 public class MenuTest {
     @Test
     public void testSetDifficulty() {
-        Menu menu = new Menu();
-
         // Test the setDifficulty method for each difficulty level
-        assertEquals(2, menu.setDifficulty(Menu.NORMAL));
-        assertEquals(3, menu.setDifficulty(Menu.DIFICIL));
-        assertEquals(4, menu.setDifficulty(Menu.MUYDIFICIL));
-        assertEquals(5, menu.setDifficulty(Menu.IMPOSIBLE));
+        assertEquals(2, Menu.setDifficulty(Menu.NORMAL));
+        assertEquals(3, Menu.setDifficulty(Menu.DIFICIL));
+        assertEquals(4, Menu.setDifficulty(Menu.MUYDIFICIL));
+        assertEquals(5, Menu.setDifficulty(Menu.IMPOSIBLE));
     }
 
     @Test
