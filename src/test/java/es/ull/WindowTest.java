@@ -2,13 +2,15 @@ package es.ull;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import java.awt.*;
-
 
 public class WindowTest {
 
     @Test
     public void testConstructor() {
+        // Configurar el modo headless
+        System.setProperty("java.awt.headless", "true");
+
+        // Resto del código de prueba
         // Arrange
         String title = "Test";
 
