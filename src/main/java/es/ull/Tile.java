@@ -34,11 +34,27 @@ public class Tile {
 	}
 
 	/**
-	 * Get the row of the tile
-	 * @return Row of the tile
+	 * Get the value of the tile
+	 * @return Value of the tile
 	 */
 	public int getValue() {
 		return value;
+	}
+
+	/**
+	 * Get the row of the tile
+	 * @return Row of the tile
+	 */
+	public int getRow() {
+		return row;
+	}
+
+	/**
+	 * Get the col of the tile
+	 * @return Col of the tile
+	 */
+	public int getCol() {
+		return col;
 	}
 
 	/**

@@ -1,2 +1,3 @@
-/workspaces/Finalproject-LyDH/src/test/java/main/java/PlayerTest.java
-/workspaces/Finalproject-LyDH/src/test/java/main/java/GameTest.java
+/workspaces/Finalproject-LyDH/src/test/java/es/ull/GameTest.java
+/workspaces/Finalproject-LyDH/src/test/java/es/ull/PlayerTest.java
+/workspaces/Finalproject-LyDH/src/test/java/es/ull/ColorSchemeTest.java
