@@ -125,7 +125,7 @@ public class Menu extends JFrame {
      * @param difficulty Difficulty of the game
      * @return The difficulty of the game
      */
-    int setDifficulty(String difficulty) {
+    static int setDifficulty(String difficulty) {
         switch (difficulty) {
             case NORMAL:
                 return 2;
