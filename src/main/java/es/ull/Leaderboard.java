@@ -9,7 +9,7 @@ public class Leaderboard {
     private static final String SEPARATOR = " ";
     private static final String ERROR = "Error: ";
 
-    private Leaderboard(){}
+    Leaderboard(){}
 
     /**
      * Load the leaderboard from the file
@@ -102,5 +102,13 @@ public class Leaderboard {
         for (Player player : players) {
             System.out.println(player.getName() + SEPARATOR + player.getScore());
         }
+    }
+
+    /**
+     * Clear the leaderboard
+     */
+    public static void clearLeaderboard() {
+        List<Player> players = new ArrayList<>();
+        saveLeaderboard(players);
     }
 }
