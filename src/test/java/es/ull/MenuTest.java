@@ -17,11 +17,9 @@ public class MenuTest {
 
     @Test
     public void testSetMode() {
-        Menu menu = new Menu();
-
         // Test the setMode method for each game mode
-        assertEquals(0, menu.setMode(Menu.NORMAL));
-        assertEquals(1, menu.setMode("Sin Fin"));
+        assertEquals(0, Menu.setMode(Menu.NORMAL));
+        assertEquals(1, Menu.setMode("Sin Fin"));
     }
 
 }
