@@ -10,10 +10,10 @@ import java.awt.event.MouseEvent;
  */
 public class Menu extends JFrame {
 
-        private static final String NORMAL = "Normal";
-        private static final String DIFICIL = "Difícil";
-        private static final String MUYDIFICIL = "Muy Difícil";
-        private static final String IMPOSIBLE = "Imposible";
+        public static final String NORMAL = "Normal";
+        public static final String DIFICIL = "Difícil";
+        public static final String MUYDIFICIL = "Muy Difícil";
+        public static final String IMPOSIBLE = "Imposible";
 
 
     /**
