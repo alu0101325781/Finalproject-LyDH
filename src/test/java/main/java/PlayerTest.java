@@ -5,6 +5,21 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.awt.*;
 
 public class PlayerTest {
+    
+    @Test
+    public void testConstructor() {
+        // Arrange
+        String playerName = "Charlie";
+        int initialScore = 75;
+
+        // Act
+        Player player = new Player(playerName, initialScore);
+
+        // Assert
+        assertNotNull(player);
+        assertEquals(playerName, player.getName());
+        assertEquals(initialScore, player.getScore());
+    }
 
     @Test
     public void testGetName() {
