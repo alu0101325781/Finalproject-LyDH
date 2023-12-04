@@ -3,11 +3,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>es.ull</groupId>
-    <artifactId>2048</artifactId>
+    <groupId>Finalproject-LyDH</groupId>
+    <artifactId>Finalproject-LyDH</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>2048</name>
+    <name>Finalproject-LyDH</name>
     <packaging>jar</packaging>
     <url>http://maven.apache.org</url>
     <properties>
@@ -17,10 +17,6 @@
         <sonar.projectKey>alu0101325781_Finalproject-LyDH</sonar.projectKey>
         <sonar.organization>alu0101325781</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-         <jacoco.version>0.8.8</jacoco.version>
-        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-        <sonar.language>java</sonar.language> 
     </properties>
 
     <dependencies>
