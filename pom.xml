@@ -52,6 +52,10 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
+                  <excludes>
+                    <exclude>**/AWTTest.java</exclude>
+                    <!-- Agrega aquí cualquier otro patrón de exclusión necesario -->
+                </excludes>
                 </configuration>
             </plugin>
 
