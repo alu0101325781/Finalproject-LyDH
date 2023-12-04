@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.awt.*;
 public class ColorSchemeTest {
     @Test
-    public void testUpdateColors() {
+    public void testColors() {
         ColorScheme colorScheme = new ColorScheme();
         Game.isDarkMode = false;
         assertEquals(new Color(238,228,218,90), colorScheme.getTileBackground(0));
@@ -19,7 +19,6 @@ public class ColorSchemeTest {
         assertEquals(new Color(0XEDCC61), colorScheme.getTileBackground(256));
         assertEquals(new Color(0XEDC850), colorScheme.getTileBackground(512));
         assertEquals(new Color(0XEDC53F), colorScheme.getTileBackground(1024));
-        colorScheme.updateColors();
     }
 
 }
