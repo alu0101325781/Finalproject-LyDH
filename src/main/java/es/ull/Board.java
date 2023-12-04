@@ -84,6 +84,10 @@ public class Board {
 		return size;
 	}
 
+	public int getDificultad() {
+		return dificultad;
+	}
+
 	/**
 	 * Set size of the grid
 	 * @param size of the grid
