@@ -19,6 +19,13 @@ public class TileTest {
         assertEquals(value, tile.getValue());
     }
 
+    
+    @Test
+    public void testConstructorDefault() {
+        Tile tile = new Tile();
+        assertNotNull(tile);
+    }
+
     @Test
     public void testSetValue() {
         // Arrange
