@@ -10,7 +10,7 @@ import java.awt.Graphics2D;
  * Class that handles the round buttons
  */
 public class RoundButton extends JButton {
-    private Color backgroundColor;
+    Color backgroundColor;
 
     /**
      * Constructor of the class RoundButton
