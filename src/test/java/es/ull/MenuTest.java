@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.awt.event.KeyEvent;
 public class MenuTest {
+    @Test
     public void testSetDifficulty() {
         Menu menu = new Menu();
 
@@ -20,6 +21,13 @@ public class MenuTest {
         // Test the setMode method for each game mode
         assertEquals(0, Menu.setMode(Menu.NORMAL));
         assertEquals(1, Menu.setMode("Sin Fin"));
+    }
+    @Test
+    public void testInitUI() {
+        Menu menu = new Menu();
+        assertEquals("2048", menu.getTitle());
+        assertNotNull(menu);
+
     }
 
 }
