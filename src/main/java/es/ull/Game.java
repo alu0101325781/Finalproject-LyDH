@@ -1,4 +1,4 @@
-package main.java;
+package es.ull;
 
 /**
  * Class that handles the game

@@ -1,4 +1,4 @@
-package main.java;
+package es.ull;
 
 import java.awt.Color;
 import java.util.HashMap;

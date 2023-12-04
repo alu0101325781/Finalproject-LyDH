@@ -96,7 +96,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>main.java.Main</mainClass>
+                            <mainClass>es.ull.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

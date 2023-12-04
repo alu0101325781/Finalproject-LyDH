@@ -1,4 +1,4 @@
-<map id="main.java.Game" name="main.java.Game">
+<map id="es.ull.Game" name="es.ull.Game">
 <area shape="rect" id="Node000001" title=" " alt="" coords="267,172,381,199"/>
 <area shape="rect" id="Node000002" href="$classmain_1_1java_1_1_color_scheme.html" title=" " alt="" coords="5,81,163,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,112,207,145,280,169,278,174,205,151,124,117"/>

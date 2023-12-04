@@ -1,4 +1,4 @@
-<map id="main.java.Controls" name="main.java.Controls">
+<map id="es.ull.Controls" name="es.ull.Controls">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,80,133,107"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="24,5,114,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,48,72,80,66,80,66,48"/>
