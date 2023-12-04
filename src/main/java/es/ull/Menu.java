@@ -10,10 +10,10 @@ import java.awt.event.MouseEvent;
  */
 public class Menu extends JFrame {
 
-        public static final String NORMAL = "Normal";
-        public static final String DIFICIL = "Difícil";
-        public static final String MUYDIFICIL = "Muy Difícil";
-        public static final String IMPOSIBLE = "Imposible";
+        static final String NORMAL = "Normal";
+        static final String DIFICIL = "Difícil";
+        static final String MUYDIFICIL = "Muy Difícil";
+        static final String IMPOSIBLE = "Imposible";
 
 
     /**
@@ -125,7 +125,7 @@ public class Menu extends JFrame {
      * @param difficulty Difficulty of the game
      * @return The difficulty of the game
      */
-    public int setDifficulty(String difficulty) {
+    int setDifficulty(String difficulty) {
         switch (difficulty) {
             case NORMAL:
                 return 2;
@@ -177,7 +177,7 @@ public class Menu extends JFrame {
      * @param modes Mode of the game
      * @return The mode of the game
      */
-    public static int setMode(String modes) {
+    static int setMode(String modes) {
         if(NORMAL.equals(modes)) {
             return 0;
         } else {
