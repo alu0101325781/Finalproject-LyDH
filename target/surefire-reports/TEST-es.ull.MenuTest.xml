@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.MenuTest" time="0.061" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.MenuTest" time="0.039" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire5256408728602383111\surefirebooter12174388138054081584.jar C:\Users\crerr\AppData\Local\Temp\surefire5256408728602383111 2023-12-05T13-13-52_752-jvmRun1 surefire11231065499009895119tmp surefire_01252782084426477736tmp"/>
+    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire6574606150442236045\surefirebooter13317480814594641800.jar C:\Users\crerr\AppData\Local\Temp\surefire6574606150442236045 2023-12-05T18-30-10_376-jvmRun1 surefire3493524939592026596tmp surefire_05019011687666621956tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\crerr"/>
     <property name="user.language" value="es"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2023-07-18"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\Finalproject-LyDH"/>
+    <property name="basedir" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire5256408728602383111\surefirebooter12174388138054081584.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire6574606150442236045\surefirebooter13317480814594641800.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\crerr\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.8"/>
-    <property name="user.dir" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\Finalproject-LyDH"/>
+    <property name="user.dir" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -56,6 +56,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testMenu" classname="es.ull.MenuTest" time="0.059"/>
-  <testcase name="testStrings" classname="es.ull.MenuTest" time="0.002"/>
+  <testcase name="testMenu" classname="es.ull.MenuTest" time="0.035"/>
+  <testcase name="testStrings" classname="es.ull.MenuTest" time="0.001"/>
 </testsuite>

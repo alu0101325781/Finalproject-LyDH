@@ -58,7 +58,7 @@ public class Board {
 	/**
 	 * Initialize board with empty tiles
 	 */
-	private void initialize() {
+	void initialize() {
 		for (int row = 0; row < this.size; row++) {
 			tiles.add(new ArrayList<>());
 			for (int col = 0; col < this.size; col++) {
@@ -155,7 +155,7 @@ public class Board {
 	 * @param sequence of {@link Tile}
 	 * @return merged sequence of {@link Tile}
 	 */
-	private List<Tile> mergeTiles(List<Tile> sequence) {
+	List<Tile> mergeTiles(List<Tile> sequence) {
 		    for (int l = 0; l < sequence.size() - 1; l++) {
 		        if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
 		            int value = sequence.get(l).merging();
