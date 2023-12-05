@@ -156,20 +156,19 @@ public class Board {
 	 * @return merged sequence of {@link Tile}
 	 */
 	private List<Tile> mergeTiles(List<Tile> sequence) {
-		for (int l = 0; l < sequence.size() - 1; l++) {
-			if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
-				int value;
-				value = sequence.get(l).merging();
-				if ((value = sequence.get(l).merging()) == 2048) {
-					gameover = true;
-				}
-				score += value;
-				sequence.remove(l + 1);
-				genNewTile = true; // board has changed its state
-				emptyTiles++;
-			}
-		}
-		return sequence;
+		    for (int l = 0; l < sequence.size() - 1; l++) {
+		        if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
+		            int value = sequence.get(l).merging();
+		            if (value == 2048) {
+		                gameover = true;
+		            }
+		            score += value;
+		            sequence.remove(l + 1);
+		            genNewTile = true; // board has changed its state
+		            emptyTiles++;
+		        }
+		    }
+		    return sequence;
 	}
 
 	/**
@@ -178,20 +177,19 @@ public class Board {
 	 * @return merged sequence of {@link Tile}
 	 */
 	private List<Tile> mergeTilesMode1(List<Tile> sequence) {
-		for (int l = 0; l < sequence.size() - 1; l++) {
-			if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
-				int value;
-				value = sequence.get(l).merging();
-				score += value;
-				if(value == 4096) {
-					System.out.printf("El número es: %d%n", value);
-				}
-				sequence.remove(l + 1);
-				genNewTile = true; // board has changed its state
-				emptyTiles++;
-			}
-		}
-		return sequence;
+		    for (int l = 0; l < sequence.size() - 1; l++) {
+		        if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
+		            int value = sequence.get(l).merging();
+		            score += value;
+		            if (value == 4096) {
+		                System.out.printf("El número es: %d%n", value);
+		            }
+		            sequence.remove(l + 1);
+		            genNewTile = true; // board has changed its state
+		            emptyTiles++;
+		        }
+		    }
+		    return sequence;
 	}
 
 
