@@ -2,6 +2,7 @@ es\ull\GridTest.class
 es\ull\ControlsTest.class
 es\ull\LeaderboardTest.class
 es\ull\TileTest.class
+es\ull\MenuTest.class
 es\ull\ColorSchemeTest.class
 es\ull\PlayerTest.class
 es\ull\GameTest.class
