@@ -1,12 +1,16 @@
 package es.ull;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import java.awt.*;
- import java.awt.event.KeyEvent;
+import static org.junit.jupiter.api.Assertions.*;
 
-import java.awt.event.KeyEvent;
 
 public class ControlsTest {
+ @Test
+ public void testControls() {
+  Controls controls = new Controls();
+  assertTrue(controls instanceof Controls);
+  assertEquals(controls.getClass().getName(), "es.ull.Controls");
+ }
+
 
 }
