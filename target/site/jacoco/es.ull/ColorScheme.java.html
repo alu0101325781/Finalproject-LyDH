@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ColorScheme.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Finalproject-LyDH</a> &gt; <a href="index.source.html" class="el_package">es.ull</a> &gt; <span class="el_source">ColorScheme.java</span></div><h1>ColorScheme.java</h1><pre class="source lang-java linenums">package es.ull;
+
+import java.awt.Color;
+import java.util.HashMap;
+
+/**
+ * Class ColorScheme that handles the colors of the game
+ */
+public class ColorScheme {
+
+    // Colores para el modo claro
+<span class="fc" id="L12">    public static final Color WINBG = new Color(0XFAF8EF);</span>
+<span class="fc" id="L13">    public static final Color GRIDBG = new Color(0XBBADA0);</span>
+<span class="fc" id="L14">    public static final Color BRIGHT = new Color(0X776E65);</span>
+<span class="fc" id="L15">    public static final Color LIGHT = new Color(0XF9F6F2);</span>
+
+    // Colores para el modo oscuro
+<span class="fc" id="L18">    public static final Color DARK_WINBG = new Color(0x3B3939);</span>
+<span class="fc" id="L19">    public static final Color DARK_GRIDBG = new Color(0x595353);</span>
+<span class="fc" id="L20">    public static final Color DARK_BRIGHT = new Color(0x526679);</span>
+<span class="fc" id="L21">    public static final Color DARK_LIGHT = new Color(0x706F6F);</span>
+
+<span class="fc" id="L23">    private HashMap&lt;Integer, Color&gt; background = new HashMap&lt;&gt;();</span>
+
+    /**
+     * Set the colors of the game
+     */
+<span class="fc" id="L28">    public ColorScheme() {</span>
+<span class="pc bpc" id="L29" title="1 of 2 branches missed.">        if (Game.isDarkMode) {</span>
+<span class="nc" id="L30">            initDarkBackgrounds();</span>
+        } else {
+<span class="fc" id="L32">            initLightBackgrounds();</span>
+        }
+<span class="fc" id="L34">    }</span>
+
+    /**
+     * Initialize the light colors of the game
+     */
+    private void initLightBackgrounds() {
+<span class="fc" id="L40">        background.put(0, new Color(238, 228, 218, 90));</span>
+<span class="fc" id="L41">        background.put(2, new Color(0XEEE4DA));</span>
+<span class="fc" id="L42">        background.put(4, new Color(0XEDE0C8));</span>
+<span class="fc" id="L43">        background.put(8, new Color(0XF2B179));</span>
+<span class="fc" id="L44">        background.put(16, new Color(0XF59563));</span>
+<span class="fc" id="L45">        background.put(32, new Color(0XF67C5F));</span>
+<span class="fc" id="L46">        background.put(64, new Color(0XF65E3B));</span>
+<span class="fc" id="L47">        background.put(128, new Color(0XEDCF72));</span>
+<span class="fc" id="L48">        background.put(256, new Color(0XEDCC61));</span>
+<span class="fc" id="L49">        background.put(512, new Color(0XEDC850));</span>
+<span class="fc" id="L50">        background.put(1024, new Color(0XEDC53F));</span>
+<span class="fc" id="L51">        background.put(2048, new Color(0XEDC22E));</span>
+<span class="fc" id="L52">        background.put(4096, 	new Color (0XEEE4DA));</span>
+<span class="fc" id="L53">		background.put(8192, 	new Color (0XEDE0C8));</span>
+<span class="fc" id="L54">		background.put(16384, 	new Color (0XF2B179));</span>
+<span class="fc" id="L55">		background.put(32768, 	new Color (0XF59563));</span>
+<span class="fc" id="L56">		background.put(65536, 	new Color (0XF67C5F));</span>
+<span class="fc" id="L57">		background.put(131072, 	new Color (0XF65E3B));</span>
+
+<span class="fc" id="L59">    }</span>
+
+    /**
+     * Initialize the dark colors of the game
+     */
+    private void initDarkBackgrounds() {
+<span class="nc" id="L65">        background.put(0, new Color(30, 30, 30, 90));</span>
+<span class="nc" id="L66">        background.put(2, new Color(0xC9EEFD)); // Light Sky Blue</span>
+<span class="nc" id="L67">        background.put(4, new Color(0x99F1F1)); // Light Blue</span>
+<span class="nc" id="L68">        background.put(8, new Color(0x96F3F3)); // Powder Blue</span>
+<span class="nc" id="L69">        background.put(16, new Color(0xA3BCEC)); // Alice Blue</span>
+<span class="nc" id="L70">        background.put(32, new Color(0x9CC2EE)); // Light Blue</span>
+<span class="nc" id="L71">        background.put(64, new Color(0x99C4EE)); // Light Steel Blue</span>
+<span class="nc" id="L72">        background.put(128, new Color(0x82C6DC)); // Azure</span>
+<span class="nc" id="L73">        background.put(256, new Color(0x88B4D9)); // Alice Blue</span>
+<span class="nc" id="L74">        background.put(512, new Color(0x7DD8E3)); // Light Cyan</span>
+<span class="nc" id="L75">        background.put(1024, new Color(0x65B9DE)); // Light Cyan</span>
+<span class="nc" id="L76">        background.put(2048, new Color(0x4DB3F3)); // Alice Blue</span>
+<span class="nc" id="L77">        background.put(4096, new Color (0xC9EEFD));</span>
+<span class="nc" id="L78">        background.put(8192, new Color (0x99F1F1));</span>
+<span class="nc" id="L79">        background.put(16384, new Color (0x96F3F3));</span>
+<span class="nc" id="L80">        background.put(32768, new Color (0xA3BCEC));</span>
+<span class="nc" id="L81">        background.put(65536, new Color (0x9CC2EE));</span>
+<span class="nc" id="L82">        background.put(131072, new Color (0x7DD8E3));</span>
+<span class="nc" id="L83">    }</span>
+
+    /**
+     * Returns the background color of the tile
+     * @param value value of the tile
+     * @return background color of the tile
+     */
+    public Color getTileBackground(int value) {
+<span class="fc" id="L91">        updateColors();</span>
+<span class="fc" id="L92">        return background.get(value);</span>
+    }
+
+    /**
+     * Returns the color of the tile
+     * @param value value of the tile
+     * @return color of the tile
+     */
+    public Color getTileColor(int value) {
+<span class="pc bpc" id="L101" title="1 of 2 branches missed.">        if (Game.isDarkMode) {</span>
+<span class="nc bnc" id="L102" title="All 2 branches missed.">            return (value &lt;= 8) ? DARK_BRIGHT : DARK_LIGHT;</span>
+        } else {
+<span class="pc bpc" id="L104" title="1 of 2 branches missed.">            return (value &lt;= 8) ? BRIGHT : LIGHT;</span>
+        }
+    }
+
+    /**
+     * Returns the color of the text
+     * @param value value of the tile
+     * @return color of the text
+     */
+    public void updateColors() {
+<span class="pc bpc" id="L114" title="1 of 2 branches missed.">        if (Game.isDarkMode) {</span>
+<span class="nc" id="L115">            initDarkBackgrounds();</span>
+        } else {
+<span class="fc" id="L117">            initLightBackgrounds();</span>
+        }
+<span class="fc" id="L119">    }</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

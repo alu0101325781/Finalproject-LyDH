@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Leaderboard.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Finalproject-LyDH</a> &gt; <a href="index.source.html" class="el_package">es.ull</a> &gt; <span class="el_source">Leaderboard.java</span></div><h1>Leaderboard.java</h1><pre class="source lang-java linenums">package es.ull;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Leaderboard {
+    private static final String FILENAME = &quot;leaderboard.txt&quot;;
+    private static final String SEPARATOR = &quot; &quot;;
+    private static final String ERROR = &quot;Error: &quot;;
+
+<span class="fc" id="L12">    public Leaderboard(){}</span>
+
+    /**
+     * Load the leaderboard from the file
+     *
+     * @return List of players
+     */
+    public static List&lt;Player&gt; loadLeaderboard() {
+<span class="fc" id="L20">        List&lt;Player&gt; players = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L22">        try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) {</span>
+            String line;
+<span class="fc bfc" id="L24" title="All 2 branches covered.">            while ((line = br.readLine()) != null) {</span>
+<span class="fc" id="L25">                String[] parts = line.split(SEPARATOR);</span>
+<span class="pc bpc" id="L26" title="1 of 2 branches missed.">                if (parts.length &gt;= 2) {</span>
+<span class="fc" id="L27">                    String name = parts[0];</span>
+<span class="fc" id="L28">                    int score = Integer.parseInt(parts[1]);</span>
+<span class="fc" id="L29">                    players.add(new Player(name, score));</span>
+<span class="fc" id="L30">                } else {</span>
+<span class="nc" id="L31">                    System.out.println(ERROR + line);</span>
+                }
+<span class="fc" id="L33">            }</span>
+<span class="nc" id="L34">        } catch (FileNotFoundException e) {</span>
+<span class="nc" id="L35">            createFile();</span>
+<span class="nc" id="L36">        } catch (IOException e) {</span>
+<span class="nc" id="L37">            System.out.println(ERROR + e.getMessage());</span>
+<span class="pc" id="L38">        }</span>
+<span class="fc" id="L39">        return players;</span>
+    }
+
+    /**
+     * Save the leaderboard to the file
+     *
+     * @param players List of players
+     */
+    private static void saveLeaderboard(List&lt;Player&gt; players) {
+<span class="fc" id="L48">        try (FileWriter fw = new FileWriter(FILENAME)) {</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">            for (Player player : players) {</span>
+<span class="fc" id="L50">                fw.write(player.getName() + SEPARATOR + player.getScore() + &quot;\n&quot;);</span>
+<span class="fc" id="L51">            }</span>
+<span class="nc" id="L52">        } catch (IOException e) {</span>
+<span class="nc" id="L53">            System.out.println(ERROR + e.getMessage());</span>
+<span class="fc" id="L54">        }</span>
+<span class="fc" id="L55">    }</span>
+
+    /**
+     * Create the file if it does not exist
+     */
+     private static void createFile() {
+<span class="nc" id="L61">        File file = new File(FILENAME);</span>
+        try {
+<span class="nc" id="L63">            boolean created = file.createNewFile();</span>
+<span class="nc bnc" id="L64" title="All 2 branches missed.">            if (created) {</span>
+<span class="nc" id="L65">                System.out.println(&quot;File created successfully.&quot;);</span>
+                // Realiza alguna acción adicional si es necesario
+            } else {
+<span class="nc" id="L68">                System.out.println(&quot;File already exists.&quot;);</span>
+                // Realiza alguna acción adicional si es necesario
+            }
+<span class="nc" id="L71">        } catch (IOException e) {</span>
+<span class="nc" id="L72">            System.out.println(ERROR + e.getMessage());</span>
+<span class="nc" id="L73">        }</span>
+<span class="nc" id="L74">    }</span>
+
+    /**
+     * Add a player to the leaderboard
+     *
+     * @param player Player to add
+     */
+    public static void addPlayer(Player player) {
+<span class="fc" id="L82">        List&lt;Player&gt; players = loadLeaderboard();</span>
+<span class="fc" id="L83">        players.add(player);</span>
+<span class="fc" id="L84">        saveLeaderboard(players);</span>
+<span class="fc" id="L85">    }</span>
+
+    /**
+     * Sort the players by score
+     */
+    public static void sortPlayers() {
+<span class="nc" id="L91">        List&lt;Player&gt; players = loadLeaderboard();</span>
+<span class="nc" id="L92">        players.sort((p1, p2) -&gt; p2.getScore() - p1.getScore());</span>
+<span class="nc" id="L93">        saveLeaderboard(players);</span>
+<span class="nc" id="L94">    }</span>
+
+    /**
+     * Print the leaderboard
+     *
+     * @param players List of players
+     */
+    public static void printLeaderboard(List&lt;Player&gt; players) {
+<span class="nc bnc" id="L102" title="All 2 branches missed.">        for (Player player : players) {</span>
+<span class="nc" id="L103">            System.out.println(player.getName() + SEPARATOR + player.getScore());</span>
+<span class="nc" id="L104">        }</span>
+<span class="nc" id="L105">    }</span>
+
+    /**
+     * Clear the leaderboard
+     */
+    public static void clearLeaderboard() {
+<span class="fc" id="L111">        List&lt;Player&gt; players = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L112">        saveLeaderboard(players);</span>
+<span class="fc" id="L113">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
