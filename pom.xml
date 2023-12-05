@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>Finalproject-LyDH</groupId>
     <artifactId>Finalproject-LyDH</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>Finalproject-LyDH</name>
     <packaging>jar</packaging>
