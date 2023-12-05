@@ -1,11 +1,17 @@
 package es.ull;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 import java.util.ArrayList;
 public class BoardTest {
-    Board board = new Board(4);
+    private Board board;
+
+    @BeforeEach
+    public void setUp() {
+        board = new Board(4);
+    }
     @Test
     public void constructorTest() {
         assertNotNull(board);
