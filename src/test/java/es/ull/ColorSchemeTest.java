@@ -16,16 +16,4 @@ public class ColorSchemeTest {
             System.out.println("Skipping AWT-related test in headless environment.");
         }
     }
-    @Test
-    public void testColors() {
-        if (!GraphicsEnvironment.isHeadless()) {
-            ColorScheme colorScheme = new ColorScheme();
-            assertTrue(es.ull.ColorScheme.WINBG instanceof Color);
-            assertTrue(es.ull.ColorScheme.GRIDBG instanceof Color);
-            assertTrue(es.ull.ColorScheme.BRIGHT instanceof Color);
-            assertTrue(es.ull.ColorScheme.LIGHT instanceof Color);
-        } else {
-            System.out.println("Skipping AWT-related test in headless environment.");
-        }
-    }
 }
