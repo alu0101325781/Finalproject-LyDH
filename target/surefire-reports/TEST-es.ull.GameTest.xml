@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire17937869971550410760\surefirebooter2068992497205003472.jar C:\Users\crerr\AppData\Local\Temp\surefire17937869971550410760 2023-12-06T17-57-33_776-jvmRun1 surefire6129432351741048799tmp surefire_09580074496191610102tmp"/>
+    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire12950422533030319859\surefirebooter7033736073967036781.jar C:\Users\crerr\AppData\Local\Temp\surefire12950422533030319859 2023-12-06T18-01-02_651-jvmRun1 surefire9821775844198133711tmp surefire_017895397769010854087tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\mockito\mockito-core\3.11.2\mockito-core-3.11.2.jar;C:\Users\crerr\.m2\repository\net\bytebuddy\byte-buddy\1.11.3\byte-buddy-1.11.3.jar;C:\Users\crerr\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.3\byte-buddy-agent-1.11.3.jar;C:\Users\crerr\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire17937869971550410760\surefirebooter2068992497205003472.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire12950422533030319859\surefirebooter7033736073967036781.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -56,5 +56,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testGame" classname="es.ull.GameTest" time="0"/>
+  <testcase name="testGame" classname="es.ull.GameTest" time="0.001"/>
 </testsuite>
