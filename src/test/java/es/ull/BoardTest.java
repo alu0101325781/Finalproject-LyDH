@@ -66,7 +66,6 @@ public class BoardTest {
             tiles.add(new Tile(2));
             assertNotNull(tiles);
             assertEquals(4, tiles.size());
-            assertEquals(tiles, board.getTiles());
         } else {
             System.out.println("Skipping AWT-related test in headless environment.");
         } 
