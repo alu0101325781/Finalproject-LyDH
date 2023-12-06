@@ -12,6 +12,7 @@ public class MainTest {
         Main main = new Main();
         assertTrue(main instanceof Main);
         assertEquals(main.getClass().getName(), "es.ull.Main");
+        assertNotNull(main);
     }
     @Test
     public void testMenuCreation() {
@@ -20,6 +21,7 @@ public class MainTest {
             assertTrue(menu instanceof Menu);
             assertEquals(menu.getClass().getName(), "es.ull.Menu");
             assertNotNull(menu);
+            assertTrue(menu.isVisible());
         } else {
             System.out.println("Headless environment detected, skipping test");
         }
