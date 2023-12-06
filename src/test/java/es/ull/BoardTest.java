@@ -2,6 +2,7 @@ package es.ull;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 import java.awt.*;
 import java.io.ByteArrayOutputStream;
