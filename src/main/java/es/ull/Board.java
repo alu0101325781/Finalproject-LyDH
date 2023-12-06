@@ -88,6 +88,10 @@ public class Board {
 		return dificultad;
 	}
 
+	public int getModo() {
+		return modo;
+	}
+
 	/**
 	 * Set size of the grid
 	 * @param size of the grid
@@ -176,7 +180,7 @@ public class Board {
 	 * @param sequence of {@link Tile}
 	 * @return merged sequence of {@link Tile}
 	 */
-	private List<Tile> mergeTilesMode1(List<Tile> sequence) {
+	List<Tile> mergeTilesMode1(List<Tile> sequence) {
 		    for (int l = 0; l < sequence.size() - 1; l++) {
 		        if (sequence.get(l).getValue() == sequence.get(l + 1).getValue()) {
 		            int value = sequence.get(l).merging();
