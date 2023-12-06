@@ -440,5 +440,18 @@ public class BoardTest {
         }
     }
 
+    @Test
+    void testGetGameOver() {
+            // Configuración del escenario de prueba con un mock de Game
+            Game mockGame = mock(Game.class);
+            when(mockGame.isGameOver()).thenReturn(true); // Simula que el juego ha terminado
+    
+            // Crea un objeto Board con el mock de Game
+            Board board = new Board(4);
+    
+            // Verifica si el método getGameOver devuelve el resultado esperado
+            assertFalse(board.getGameOver());
+    }
+    
 }
     
