@@ -89,4 +89,16 @@ public class TileTest {
         assertFalse(nonEmptyTile.isEmpty());
     }
 
+    @Test 
+    public void testToString() {
+        // Arrange
+        int value = 4;
+
+        // Act
+        Tile tile = new Tile(value);
+        String str = tile.toString();
+        assertNotNull(str);
+        assertEquals("Tile [value=4]", str);
+    }
+
 }
