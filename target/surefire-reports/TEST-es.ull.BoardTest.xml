@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.BoardTest" time="0.647" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.BoardTest" time="0.841" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire11019781265388226060\surefirebooter13060970768879195131.jar C:\Users\crerr\AppData\Local\Temp\surefire11019781265388226060 2023-12-06T15-59-09_197-jvmRun1 surefire11768226296730388686tmp surefire_02665294642931049798tmp"/>
+    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire9075965132475210327\surefirebooter4459534607053951482.jar C:\Users\crerr\AppData\Local\Temp\surefire9075965132475210327 2023-12-06T16-13-55_361-jvmRun1 surefire829594422820672994tmp surefire_08584556953905663170tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire11019781265388226060\surefirebooter13060970768879195131.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire9075965132475210327\surefirebooter4459534607053951482.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -56,17 +56,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="constructorTest" classname="es.ull.BoardTest" time="0.36"/>
+  <testcase name="constructorTest" classname="es.ull.BoardTest" time="0.528"/>
   <testcase name="testSetDificultad" classname="es.ull.BoardTest" time="0"/>
-  <testcase name="testMergeTiles" classname="es.ull.BoardTest" time="0.246"/>
-  <testcase name="testIsMovePossible" classname="es.ull.BoardTest" time="0.001"/>
-  <testcase name="testShow" classname="es.ull.BoardTest" time="0.003"/>
-  <testcase name="testAddEmptyTilesFirst" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="testMergeTiles1" classname="es.ull.BoardTest" time="0.001"/>
-  <testcase name="testAddEmptyTilesLast" classname="es.ull.BoardTest" time="0.003"/>
+  <testcase name="testMergeTiles" classname="es.ull.BoardTest" time="0.243"/>
+  <testcase name="testIsMovePossible" classname="es.ull.BoardTest" time="0.003"/>
+  <testcase name="testShow" classname="es.ull.BoardTest" time="0.007"/>
+  <testcase name="testAddEmptyTilesFirst" classname="es.ull.BoardTest" time="0.005"/>
+  <testcase name="testMergeTiles1" classname="es.ull.BoardTest" time="0.002"/>
+  <testcase name="testAddEmptyTilesLast" classname="es.ull.BoardTest" time="0.001"/>
+  <testcase name="testRemTileAt" classname="es.ull.BoardTest" time="0.011"/>
   <testcase name="testIsFull" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="testSetModo" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="testSetSize" classname="es.ull.BoardTest" time="0"/>
-  <testcase name="initializeTest" classname="es.ull.BoardTest" time="0"/>
-  <testcase name="testSetTiles" classname="es.ull.BoardTest" time="0.003"/>
+  <testcase name="testSetModo" classname="es.ull.BoardTest" time="0.001"/>
+  <testcase name="testSetSize" classname="es.ull.BoardTest" time="0.002"/>
+  <testcase name="testRemoveEmptyTilesRow" classname="es.ull.BoardTest" time="0.002"/>
+  <testcase name="initializeTest" classname="es.ull.BoardTest" time="0.003"/>
+  <testcase name="testSetTiles" classname="es.ull.BoardTest" time="0.004"/>
 </testsuite>

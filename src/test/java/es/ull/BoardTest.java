@@ -91,6 +91,7 @@ public class BoardTest {
         }
     }
 
+    @Test
     public void testRemTileAt() {
         if (!GraphicsEnvironment.isHeadless()) {
             Board board = new Board(4);
