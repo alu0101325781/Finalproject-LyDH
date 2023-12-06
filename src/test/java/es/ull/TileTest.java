@@ -80,7 +80,7 @@ public class TileTest {
 
     @Test
     public void testIsEmpty() {
-        // Arrange
+        // Arrange1
         Tile emptyTile = new Tile(0);
         Tile nonEmptyTile = new Tile(2);
 
