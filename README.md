@@ -29,6 +29,7 @@ Nahia Ganuza Izaguirre
 ## SonarCloud's metrics
 
 [![SonarCloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=alert_status)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=coverage)](https://sonarcloud.io/summary/new_code?id=alu0101325781_Finalproject-LyDH)
 [![SonarCloud Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=reliability_rating)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
 [![SonarCloud Code Smells](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=code_smells)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
 [![SonarCloud Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=sqale_rating)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
