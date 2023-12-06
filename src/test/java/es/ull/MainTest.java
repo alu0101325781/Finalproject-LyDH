@@ -10,4 +10,11 @@ public class MainTest {
         assertTrue(main instanceof Main);
         assertEquals(main.getClass().getName(), "es.ull.Main");
     }
+    @Test
+    public void testMenuCreation() {
+        Menu menu = new Menu();
+        assertTrue(menu instanceof Menu);
+        assertEquals(menu.getClass().getName(), "es.ull.Menu");
+        assertNotNull(menu);
+    }
 }

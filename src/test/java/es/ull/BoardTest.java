@@ -107,7 +107,7 @@ public class BoardTest {
 
             // Verificar que la baldosa se haya eliminado correctamente
             Tile tileAfterRemoval = board.getTileAt(1, 2);
-            assertTrue(tileAfterRemoval.isEmpty()); // Comprobar si la baldosa está vacía después de la eliminación
+            assertFalse(!tileAfterRemoval.isEmpty()); // Comprobar si la baldosa está vacía después de la eliminación
             assertNotEquals(tileBeforeRemoval, tileAfterRemoval); // Comprobar que las baldosas antes y después de la eliminación son diferentes
         } else {
             System.out.println("Skipping AWT-related test in headless environment.");
