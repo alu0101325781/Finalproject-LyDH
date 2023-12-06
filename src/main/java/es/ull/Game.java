@@ -13,7 +13,4 @@ public class Game {
 	public static Controls CONTROLS = new Controls();
 	public static final Board BOARD = new Board(4);
 
-	public Object isGameOver() {
-    		return null;
-  	}
 }
