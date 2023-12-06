@@ -398,10 +398,6 @@ public class Board {
 		}
 	}
 
-	boolean getGameOver() {
-		return gameover;
-	}
-
 	/**
 	 * Checks if the board is full
 	 * @return true if the board is full
