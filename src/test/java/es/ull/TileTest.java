@@ -8,13 +8,10 @@ public class TileTest {
     
     @Test
     public void testConstructorWithValue() {
-        // Arrange
         int value = 4;
 
-        // Act
         Tile tile = new Tile(value);
 
-        // Assert
         assertNotNull(tile);
         assertEquals(value, tile.getValue());
     }
