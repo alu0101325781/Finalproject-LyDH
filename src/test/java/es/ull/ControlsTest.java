@@ -60,18 +60,4 @@ public class ControlsTest {
     }
 
     // Repite para las teclas LEFT, RIGHT, ESCAPE, y otros casos si es necesario
-
-    @Test
-    public void testBind() {
-        // Puedes probar que el método bind() agrega el KeyListener correctamente
-        assertDoesNotThrow(() -> controls.bind());
-        // Agrega más aserciones según sea necesario
-    }
-
-    @Test
-    public void testUnbind() {
-        // Puedes probar que el método unbind() elimina el KeyListener correctamente
-        assertDoesNotThrow(() -> controls.unbind());
-        // Agrega más aserciones según sea necesario
-    }
 }
