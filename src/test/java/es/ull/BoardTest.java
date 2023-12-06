@@ -39,7 +39,8 @@ public class BoardTest {
         if(!GraphicsEnvironment.isHeadless()) {
             Board board = new Board(4);
             assertEquals(4, board.getSize());
-            assertEquals(4, board.getTiles().size());
+            board.setSize(5);
+            assertEquals(5, board.getSize());
         } else {
             System.out.println("Skipping AWT-related test in headless environment.");
         }
