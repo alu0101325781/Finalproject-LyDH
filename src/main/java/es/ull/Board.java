@@ -15,9 +15,9 @@ public class Board {
 	private int size; 						// size of the grid
 	private static int score; 						// game score
 	private int emptyTiles;					// number of tiles with zero value
-	private boolean gameover = false; 		// game is over when 2048 tile is found
-	private String wonOrLost;				// won or lost
-	private boolean genNewTile = false;		// generate new tile when any tile moved
+	boolean gameover = false; 		// game is over when 2048 tile is found
+	String wonOrLost;				// won or lost
+	boolean genNewTile = false;		// generate new tile when any tile moved
 	private List<List<Tile>> tiles;			// board
 
 	private static int dificultad ;  // Nueva variable para almacenar la dificultad
@@ -202,7 +202,7 @@ public class Board {
 	 * @param merged sequence of {@link Tile}
 	 * @return refilled sequence with required number of empty {@link Tile}
 	 */
-	private List<Tile> addEmptyTilesFirst(List<Tile> merged) {
+	List<Tile> addEmptyTilesFirst(List<Tile> merged) {
 		for (int k = merged.size(); k < size; k++) {
 			merged.add(0, new Tile());
 		}
@@ -214,7 +214,7 @@ public class Board {
 	 * @param merged sequence of {@link Tile}
 	 * @return refilled sequence with required number of empty {@link Tile}
 	 */
-	private List<Tile> addEmptyTilesLast(List<Tile> merged) { // boolean last/first
+	List<Tile> addEmptyTilesLast(List<Tile> merged) { // boolean last/first
 		for (int k = merged.size(); k < size; k++) {
 			merged.add(k, new Tile());
 		}
@@ -226,7 +226,7 @@ public class Board {
 	 * @param row
 	 * @return sequence of non-empty {@link Tile}
 	 */
-	private List<Tile> removeEmptyTilesRows(int row) {
+	List<Tile> removeEmptyTilesRows(int row) {
 
 		List<Tile> moved = new ArrayList<>();
 
@@ -244,7 +244,7 @@ public class Board {
 	 * @param row
 	 * @return sequence of non-empty {@link Tile}
 	 */
-	private List<Tile> removeEmptyTilesCols(int row) {
+	List<Tile> removeEmptyTilesCols(int row) {
 
 		List<Tile> moved = new ArrayList<>();
 
@@ -263,7 +263,7 @@ public class Board {
 	 * @param row
 	 * @return sequence of {@link Tile}
 	 */
-	private List<Tile> setRowToBoard(List<Tile> moved, int row) {
+	List<Tile> setRowToBoard(List<Tile> moved, int row) {
 		for (int col = 0; col < tiles.size(); col++) {
 			if (moved.get(col).hasMoved(row, col)) {
 				genNewTile = true;
@@ -280,7 +280,7 @@ public class Board {
 	 * @param row
 	 * @return sequence of {@link Tile}
 	 */
-	private List<Tile> setColToBoard(List<Tile> moved, int row) {
+	List<Tile> setColToBoard(List<Tile> moved, int row) {
 		for (int col = 0; col < tiles.size(); col++) {
 			if (moved.get(col).hasMoved(col, row)) {
 				genNewTile = true;
@@ -383,7 +383,6 @@ public class Board {
 	 * Checks if the game is over
 	 */
 	public void isGameOver() {
-
 		if (gameover) {
 			setWonOrLost("WON");
 		} else {
@@ -397,6 +396,10 @@ public class Board {
 				newRandomTile(); // game continues
 			}
 		}
+	}
+
+	boolean getGameOver() {
+		return gameover;
 	}
 
 	/**
