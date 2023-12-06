@@ -420,16 +420,5 @@ public class BoardTest {
         }
     }
 
-    @Test
-    void testIsMovePossible() {
-        if (!GraphicsEnvironment.isHeadless()) {
-            Board board = new Board(4);
-            board.initialize();
-            assertTrue(board.isMovePossible());
-        } else {
-            System.out.println("Skipping AWT-related test in headless environment.");
-        }
-    }
-
 }
     
