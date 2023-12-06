@@ -45,4 +45,5 @@ public class RoundButtonTest {
     assertNotNull(button);
     assertEquals(backgroundColor, button.backgroundColor);
   }
+
 }

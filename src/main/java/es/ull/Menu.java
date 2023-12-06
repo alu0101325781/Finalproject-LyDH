@@ -66,7 +66,7 @@ public class Menu extends JFrame {
      * @param foregroundColor Foreground color of the button
      * @return The button with the custom style
      */
-    private RoundButton createStyledButton(String text, Color backgroundColor, Color foregroundColor) {
+    RoundButton createStyledButton(String text, Color backgroundColor, Color foregroundColor) {
         RoundButton button = new RoundButton(text, backgroundColor, foregroundColor);
         button.addMouseListener(new MouseAdapter() {
             @Override
@@ -89,7 +89,7 @@ public class Menu extends JFrame {
      * Opens the difficulty window
      * @param isDarkMode True if the dark mode is enabled, false otherwise
      */
-    private void openDifficultyWindow(boolean isDarkMode) {
+    void openDifficultyWindow(boolean isDarkMode) {
         JFrame difficultyFrame = new JFrame("Select Difficulty");
         difficultyFrame.setSize(300, 250);
         difficultyFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
