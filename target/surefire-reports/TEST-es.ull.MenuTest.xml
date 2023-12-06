@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.MenuTest" time="0.088" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.MenuTest" time="0.163" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire676944276725523618\surefirebooter7616703364554841419.jar C:\Users\crerr\AppData\Local\Temp\surefire676944276725523618 2023-12-06T15-48-51_572-jvmRun1 surefire8619036010061575727tmp surefire_011297546141223823172tmp"/>
+    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire11019781265388226060\surefirebooter13060970768879195131.jar C:\Users\crerr\AppData\Local\Temp\surefire11019781265388226060 2023-12-06T15-59-09_197-jvmRun1 surefire11768226296730388686tmp surefire_02665294642931049798tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire676944276725523618\surefirebooter7616703364554841419.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire11019781265388226060\surefirebooter13060970768879195131.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -56,8 +56,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testOpenDifficultyWindow" classname="es.ull.MenuTest" time="0.025"/>
-  <testcase name="testMenu" classname="es.ull.MenuTest" time="0.031"/>
-  <testcase name="testCreateStyledButton" classname="es.ull.MenuTest" time="0.028"/>
+  <testcase name="testOpenDifficultyWindow" classname="es.ull.MenuTest" time="0.018"/>
+  <testcase name="testMenu" classname="es.ull.MenuTest" time="0.043"/>
+  <testcase name="testCreateStyledButton" classname="es.ull.MenuTest" time="0.098"/>
   <testcase name="testStrings" classname="es.ull.MenuTest" time="0.001"/>
 </testsuite>

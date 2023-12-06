@@ -406,7 +406,7 @@ public class Board {
 	 * Checks if the board is full
 	 * @return true if the board is full
 	 */
-	private boolean isFull() {
+	 boolean isFull() {
 		return emptyTiles == 0;
 	}
 
@@ -414,7 +414,7 @@ public class Board {
 	 * Checks if there is a possible move
 	 * @return true if there is a possible move
 	 */
-	private boolean isMovePossible() {
+	 boolean isMovePossible() {
 		for (int row = 0; row < size; row++) {
 			for (int col = 0; col < size - 1; col++) {
 				if (getTileAt(row, col).getValue() == getTileAt(row, col + 1).getValue()) {

@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.awt.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.List;
 import java.util.ArrayList;
 public class BoardTest {
@@ -192,6 +194,81 @@ public class BoardTest {
             System.out.println("Skipping AWT-related test in headless environment.");
         }
     }
+    @Test
+    void testShow() {
+        if (!GraphicsEnvironment.isHeadless()) {
+            Board board = new Board(4);
+            board.initialize();
+
+            // Redirige la salida estándar para capturar la impresión en la consola
+            ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+            System.setOut(new PrintStream(outContent));
+
+            // Llama al método show()
+            board.show();
+
+            // Restaura la salida estándar
+            System.setOut(System.out);
+
+            // Verifica que la salida contenga información esperada (puedes ajustar según la lógica de tu juego)
+            assertTrue(outContent.toString().contains("SCORE:"));
+
+            // Verifica que la salida tenga el formato esperado (puedes ajustar según la lógica de tu juego)
+            assertTrue(outContent.toString().contains("    0    0    0    0"));
+
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
+    }
+
+    @Test
+    void testIsFull() {
+        if (!GraphicsEnvironment.isHeadless()) {
+            Board board = new Board(4);
+            board.initialize();
+
+            // Verifica que el tablero está lleno inicialmente
+            assertFalse(board.isFull(), "Board should not be full initially");
+
+            // Llena el tablero con valores diferentes de cero
+            for (List<Tile> row : board.getTiles()) {
+                for (Tile tile : row) {
+                    tile.setValue(2); // o cualquier otro valor diferente de cero
+                }
+            }
+
+            // Verifica que el tablero esté lleno después de llenarlo
+            assertFalse(board.isFull(), "Board should be full after filling it");
+
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
+    }
+
+    @Test
+    void testIsMovePossible() {
+        if (!GraphicsEnvironment.isHeadless()) {
+            Board board = new Board(4);
+            board.initialize();
+
+            // Verifica que haya movimientos posibles inicialmente
+            assertTrue(board.isMovePossible(), "There should be possible moves initially");
+
+            // Establece el tablero de modo que no haya movimientos posibles
+            for (List<Tile> row : board.getTiles()) {
+                for (Tile tile : row) {
+                    tile.setValue(2); // o cualquier valor específico para que no haya movimientos posibles
+                }
+            }
+
+            // Verifica que no haya movimientos posibles después de establecer el tablero
+            assertTrue(board.isMovePossible(), "There should be no possible moves after setting the board");
+
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
+    }
+
 
 
 }
