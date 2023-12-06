@@ -3,6 +3,8 @@ package es.ull;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class ControlsTest {
@@ -31,22 +33,30 @@ public class ControlsTest {
 
     @Test
     public void testKeyPressed_MoveUp() {
-        // Simula la pulsación de la tecla UP
-        KeyEvent event = new KeyEvent(Game.WINDOW, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_UP, 'W');
+        if (!GraphicsEnvironment.isHeadless()) {
+            // Simula la pulsación de la tecla UP
+            KeyEvent event = new KeyEvent(Game.WINDOW, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_UP, 'W');
 
-        // Puedes realizar pruebas para asegurar que la llamada a moveUp() se realiza correctamente
-        assertDoesNotThrow(() -> controls.keyPressed(event));
-        // Agrega más aserciones según sea necesario
+            // Puedes realizar pruebas para asegurar que la llamada a moveUp() se realiza correctamente
+            assertDoesNotThrow(() -> controls.keyPressed(event));
+            // Agrega más aserciones según sea necesario
+        } else {
+            System.out.println("Headless environment detected, skipping test");
+        }
     }
 
     @Test
     public void testKeyPressed_MoveDown() {
-        // Simula la pulsación de la tecla DOWN
-        KeyEvent event = new KeyEvent(Game.WINDOW, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_DOWN, 'S');
+        if(!GraphicsEnvironment.isHeadless()) {
+            // Simula la pulsación de la tecla DOWN
+            KeyEvent event = new KeyEvent(Game.WINDOW, KeyEvent.KEY_PRESSED, System.currentTimeMillis(), 0, KeyEvent.VK_DOWN, 'S');
 
-        // Puedes realizar pruebas para asegurar que la llamada a moveDown() se realiza correctamente
-        assertDoesNotThrow(() -> controls.keyPressed(event));
-        // Agrega más aserciones según sea necesario
+            // Puedes realizar pruebas para asegurar que la llamada a moveDown() se realiza correctamente
+            assertDoesNotThrow(() -> controls.keyPressed(event));
+            // Agrega más aserciones según sea necesario
+        } else {
+            System.out.println("Headless environment detected, skipping test");
+        }
     }
 
     // Repite para las teclas LEFT, RIGHT, ESCAPE, y otros casos si es necesario

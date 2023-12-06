@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.BoardTest" time="0.83" tests="22" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.BoardTest" time="0.776" tests="22" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire12950422533030319859\surefirebooter7033736073967036781.jar C:\Users\crerr\AppData\Local\Temp\surefire12950422533030319859 2023-12-06T18-01-02_651-jvmRun1 surefire9821775844198133711tmp surefire_017895397769010854087tmp"/>
+    <property name="sun.java.command" value="C:\Users\crerr\AppData\Local\Temp\surefire12719499284674938776\surefirebooter13664784153026457718.jar C:\Users\crerr\AppData\Local\Temp\surefire12719499284674938776 2023-12-06T18-04-09_448-jvmRun1 surefire9137258250795245343tmp surefire_017196068937814288925tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\test-classes;C:\Users\crerr\OneDrive\Desktop\CUARTO\LyH\Finalproject-LyDH\target\classes;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\crerr\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\crerr\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\crerr\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;C:\Users\crerr\.m2\repository\org\mockito\mockito-core\3.11.2\mockito-core-3.11.2.jar;C:\Users\crerr\.m2\repository\net\bytebuddy\byte-buddy\1.11.3\byte-buddy-1.11.3.jar;C:\Users\crerr\.m2\repository\net\bytebuddy\byte-buddy-agent\1.11.3\byte-buddy-agent-1.11.3.jar;C:\Users\crerr\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire12950422533030319859\surefirebooter7033736073967036781.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\crerr\AppData\Local\Temp\surefire12719499284674938776\surefirebooter13664784153026457718.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -56,26 +56,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="constructorTest" classname="es.ull.BoardTest" time="0.464"/>
+  <testcase name="constructorTest" classname="es.ull.BoardTest" time="0.459"/>
   <testcase name="testSetDificultad" classname="es.ull.BoardTest" time="0"/>
-  <testcase name="testMergeTiles" classname="es.ull.BoardTest" time="0.266"/>
-  <testcase name="testIsMovePossible" classname="es.ull.BoardTest" time="0.003"/>
-  <testcase name="testShow" classname="es.ull.BoardTest" time="0.007"/>
-  <testcase name="testAddEmptyTilesFirst" classname="es.ull.BoardTest" time="0.005"/>
+  <testcase name="testMergeTiles" classname="es.ull.BoardTest" time="0.239"/>
+  <testcase name="testIsMovePossible" classname="es.ull.BoardTest" time="0.001"/>
+  <testcase name="testShow" classname="es.ull.BoardTest" time="0.004"/>
+  <testcase name="testAddEmptyTilesFirst" classname="es.ull.BoardTest" time="0.004"/>
   <testcase name="testIsGameOverWhenGameWon" classname="es.ull.BoardTest" time="0.002"/>
   <testcase name="testMergeTiles1" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="testGetGameOver" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="testMoveDown" classname="es.ull.BoardTest" time="0.001"/>
+  <testcase name="testGetGameOver" classname="es.ull.BoardTest" time="0.001"/>
+  <testcase name="testMoveDown" classname="es.ull.BoardTest" time="0.002"/>
   <testcase name="testMoveLeft" classname="es.ull.BoardTest" time="0.002"/>
   <testcase name="testSetColToBoard" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="testAddEmptyTilesLast" classname="es.ull.BoardTest" time="0.001"/>
-  <testcase name="testRemTileAt" classname="es.ull.BoardTest" time="0.009"/>
-  <testcase name="testIsFull" classname="es.ull.BoardTest" time="0.004"/>
+  <testcase name="testAddEmptyTilesLast" classname="es.ull.BoardTest" time="0.002"/>
+  <testcase name="testRemTileAt" classname="es.ull.BoardTest" time="0.007"/>
+  <testcase name="testIsFull" classname="es.ull.BoardTest" time="0.002"/>
   <testcase name="testMoveUp" classname="es.ull.BoardTest" time="0.002"/>
   <testcase name="testSetModo" classname="es.ull.BoardTest" time="0.002"/>
   <testcase name="testSetSize" classname="es.ull.BoardTest" time="0.001"/>
-  <testcase name="testMoveRight" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="testRemoveEmptyTilesRow" classname="es.ull.BoardTest" time="0.002"/>
-  <testcase name="initializeTest" classname="es.ull.BoardTest" time="0.002"/>
+  <testcase name="testMoveRight" classname="es.ull.BoardTest" time="0.001"/>
+  <testcase name="testRemoveEmptyTilesRow" classname="es.ull.BoardTest" time="0.001"/>
+  <testcase name="initializeTest" classname="es.ull.BoardTest" time="0.001"/>
   <testcase name="testSetTiles" classname="es.ull.BoardTest" time="0.001"/>
 </testsuite>
