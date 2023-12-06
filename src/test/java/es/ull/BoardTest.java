@@ -422,6 +422,7 @@ public class BoardTest {
             System.out.println("Skipping AWT-related test in headless environment.");
         }
     }
+    
     @Test
     void testIsGameOverWhenGameWon() {
         if (!GraphicsEnvironment.isHeadless()) {
@@ -440,6 +441,15 @@ public class BoardTest {
             System.out.println("Skipping AWT-related test in headless environment.");
         }
     }
-    
+
+    @Test
+    void testGetGameOver() {
+        if (!GraphicsEnvironment.isHeadless()) {
+            Board board = new Board(4);
+            assertFalse(board.getGameOver());
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
+    }
 }
     
