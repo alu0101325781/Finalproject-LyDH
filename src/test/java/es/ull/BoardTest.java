@@ -2,6 +2,7 @@ package es.ull;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.lang.reflect.Field;
 
 import java.awt.*;
 import java.io.ByteArrayOutputStream;
@@ -441,14 +442,21 @@ public class BoardTest {
     }
 
     @Test
-    void testGetGameOver() {    
-        if (!GraphicsEnvironment.isHeadless()) {
-            Board board = new Board(4);
-            board.initialize();
-            assertFalse(board.getGameOver());
-        } else {
-            System.out.println("Skipping AWT-related test in headless environment.");
-        }
+    void testGetGameOverWithoutObjectCreation() throws NoSuchFieldException, IllegalAccessException {
+        // Crear un objeto Field para acceder al campo privado 'gameover'
+        Field gameoverField = Board.class.getDeclaredField("gameover");
+
+        // Hacer el campo accesible incluso si es privado
+        gameoverField.setAccessible(true);
+
+        // Crear una instancia ficticia de la clase Board
+        Board fakeBoard = new Board(4);
+
+        // Establecer el valor del campo 'gameover' en true (simulando que el juego ha terminado)
+        gameoverField.set(fakeBoard, true);
+
+        // Llamar al método getGameOver y verificar el resultado
+        assertTrue(fakeBoard.getGameOver());
     }
     
 }
