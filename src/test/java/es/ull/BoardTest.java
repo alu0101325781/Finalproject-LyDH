@@ -273,26 +273,22 @@ public class BoardTest {
 
     @Test
     void testRemoveEmptyTilesRow() {
-        if (!GraphicsEnvironment.isHeadless()) {
-            Board board = new Board(4);
-            List<Tile> tiles = new ArrayList<>();
-            tiles.add(new Tile(2));
-            tiles.add(new Tile(4));
+        Board board = new Board(4);
+        List<Tile> tiles = new ArrayList<>();
+        tiles.add(new Tile(2));
+        tiles.add(new Tile(4));
 
-            // Agregar baldosas vacías al final
-            List<Tile> merged = board.addEmptyTilesLast(tiles);
+        // Agregar baldosas vacías al final
 
-            // Verificar si las baldosas vacías se han agregado correctamente al final
-            assertEquals(4, merged.size()); // El tamaño debe ser igual al tamaño del tablero (4)
-            for (int i = 0; i < tiles.size()/2; i++) {
-                assertTrue(!merged.get(i).isEmpty()); // Las primeras baldosas no deben ser vacías
-            }
-            for (int i = tiles.size()/2; i < merged.size(); i++) {
-                assertTrue(merged.get(i).isEmpty()); // Las baldosas adicionales deben ser vacías
-            }
+        List<Tile> merged = board.addEmptyTilesLast(tiles);
 
-        } else {
-            System.out.println("Skipping AWT-related test in headless environment.");
+        // Verificar si las baldosas vacías se han agregado correctamente al final
+        assertEquals(4, merged.size()); // El tamaño debe ser igual al tamaño del tablero (4)
+        for (int i = 0; i < tiles.size()/2; i++) {
+            assertTrue(!merged.get(i).isEmpty()); // Las primeras baldosas no deben ser vacías
+        }
+        for (int i = tiles.size()/2; i < merged.size(); i++) {
+            assertTrue(merged.get(i).isEmpty()); // Las baldosas adicionales deben ser vacías
         }
     }
 
