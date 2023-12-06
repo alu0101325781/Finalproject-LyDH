@@ -36,3 +36,4 @@ Nahia Ganuza Izaguirre
 [![SonarCloud Security Rating](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=security_rating)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
 [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=vulnerabilities)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
 [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=bugs)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
+
