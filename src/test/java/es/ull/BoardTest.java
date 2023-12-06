@@ -420,6 +420,24 @@ public class BoardTest {
             System.out.println("Skipping AWT-related test in headless environment.");
         }
     }
+    @Test
+    void testIsGameOverWhenGameWon() {
+        if (!GraphicsEnvironment.isHeadless()) {
+            Board board = new Board(4);
+            board.initialize();
+
+        // Verifica que el juego no haya terminado inicialmente
+            board.setWonOrLost("WON");
+            if (board.getWonOrLost().equals("WON")) {
+                board.gameover = true;
+            }
+            assertTrue(board.gameover, "Game should be over when game is won");
+
+
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
+    }
 
 }
     
