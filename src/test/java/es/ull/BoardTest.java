@@ -2,7 +2,6 @@ package es.ull;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 import java.awt.*;
 import java.io.ByteArrayOutputStream;
@@ -442,16 +441,14 @@ public class BoardTest {
     }
 
     @Test
-    void testGetGameOver() {
-            // Configuración del escenario de prueba con un mock de Game
-            Game mockGame = mock(Game.class);
-            when(mockGame.isGameOver()).thenReturn(true); // Simula que el juego ha terminado
-    
-            // Crea un objeto Board con el mock de Game
+    void testGetGameOver() {    
+        if (!GraphicsEnvironment.isHeadless()) {
             Board board = new Board(4);
-    
-            // Verifica si el método getGameOver devuelve el resultado esperado
+            board.initialize();
             assertFalse(board.getGameOver());
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
     }
     
 }
