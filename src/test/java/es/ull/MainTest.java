@@ -26,4 +26,16 @@ public class MainTest {
             System.out.println("Headless environment detected, skipping test");
         }
     }
+
+    @Test
+    public void testSetMode(){
+        if(!GraphicsEnvironment.isHeadless()) {
+            Menu menu = new Menu();
+            assertEquals(Menu.setMode("Normal"), 0);
+            assertEquals(Menu.setMode("Sín Fin"), 1);
+        } else {
+            System.out.println("Headless environment detected, skipping test");
+        }
+
+    }
 }
