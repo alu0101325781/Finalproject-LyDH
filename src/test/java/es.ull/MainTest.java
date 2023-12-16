@@ -11,6 +11,8 @@ public class MainTest {
         assertTrue(main instanceof Main);
         assertEquals(main.getClass().getName(), "Main");
         assertNotNull(main);
+        assertDoesNotThrow(() -> Main.main(new String[]{}));
+
     }
     @Test
     public void testMenuCreation() {

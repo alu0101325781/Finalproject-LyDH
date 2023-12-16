@@ -4,8 +4,11 @@
 public class Main {
 	
 	public static void main(String[] args) {
-		
-		new Menu();
+		try {
+			new Menu();
+		}catch (Exception e) {
+			System.out.println("Error: " + e.getMessage());
+		}
 		        		
 	}
 }
