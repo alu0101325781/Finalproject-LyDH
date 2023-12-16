@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+import javax.swing.*;
 import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -73,8 +74,51 @@ public class MenuTest {
         }
     }
 
+    @Test
+    public void testSetDifficulty_Normal() {
+        // Arrange
+        Menu menu = new Menu();
 
+        // Act
+        int result = menu.setDifficulty(Menu.NORMAL);
 
+        // Assert
+        assertEquals(2, result);
+    }
 
+    @Test
+    public void testSetDifficulty_Dificil() {
+        // Arrange
+        Menu menu = new Menu();
+
+        // Act
+        int result = menu.setDifficulty(Menu.DIFICIL);
+
+        // Assert
+        assertEquals(3, result);
+    }
+
+    @Test
+    public void testOpenModeWindow() {
+        if (!GraphicsEnvironment.isHeadless()) {
+            // Arrange
+            boolean darkMode = true;
+            Menu menu = new Menu();
+
+            // Act
+            menu.openModeWindow(!darkMode);
+
+            // Assert
+            assertNotNull(menu.getModeFrame());
+            assertFalse(menu.getModeFrame().isResizable());
+            assertEquals(300, menu.getModeFrame().getWidth());
+            assertEquals(250, menu.getModeFrame().getHeight());
+            assertEquals(WindowConstants.EXIT_ON_CLOSE, menu.getModeFrame().getDefaultCloseOperation());
+
+            // Resto del código de la prueba...
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
+    }
 
 }

@@ -12,6 +12,7 @@ public class Menu extends JFrame {
         static final String DIFICIL = "Difícil";
         static final String MUYDIFICIL = "Muy Difícil";
         static final String IMPOSIBLE = "Imposible";
+         JFrame modeFrame;
 
 
     /**
@@ -142,8 +143,8 @@ public class Menu extends JFrame {
      * Opens the mode window
      * @param isDarkMode True if the dark mode is enabled, false otherwise
      */
-    private void openModeWindow(boolean isDarkMode) {
-        JFrame modeFrame = new JFrame("Select Mode");
+    void openModeWindow(boolean isDarkMode) {
+        modeFrame = new JFrame("Select Mode");
         modeFrame.setSize(300, 250);
         modeFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         modeFrame.setResizable(false);
@@ -164,10 +165,12 @@ public class Menu extends JFrame {
             modePanel.add(modeButton);
         }
 
-
         modeFrame.add(modePanel);
         modeFrame.setVisible(true);
 
+    }
+    JFrame getModeFrame(){
+        return modeFrame;
     }
 
     /**
