@@ -42,7 +42,7 @@ public class Leaderboard {
      *
      * @param players List of players
      */
-    private static void saveLeaderboard(List<Player> players) {
+     static void saveLeaderboard(List<Player> players) {
         try (FileWriter fw = new FileWriter(FILENAME)) {
             for (Player player : players) {
                 fw.write(player.getName() + SEPARATOR + player.getScore() + "\n");
@@ -54,8 +54,10 @@ public class Leaderboard {
 
     /**
      * Create the file if it does not exist
+     *
+     * @return
      */
-     private static void createFile() {
+    static String createFile() {
         File file = new File(FILENAME);
         try {
             boolean created = file.createNewFile();
@@ -69,6 +71,7 @@ public class Leaderboard {
         } catch (IOException e) {
             System.out.println(ERROR + e.getMessage());
         }
+        return null;
     }
 
     /**
