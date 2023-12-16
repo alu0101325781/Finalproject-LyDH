@@ -244,7 +244,7 @@ public class Grid extends JPanel {
 	/**
 	 * Ends the game
 	 */
-	private void endGame() {
+	void endGame() {
 		String name = JOptionPane.showInputDialog("Enter your name: ");
 		if (name == null || name.isEmpty()) {
 			name = "Anonymous";
@@ -257,7 +257,7 @@ public class Grid extends JPanel {
 	/**
 	 * Shows the leaderboard
 	 */
-	private void showLeaderboard() {
+	void showLeaderboard() {
 		StringBuilder leaderboardBuilder = new StringBuilder("Tabla de clasificación:\n\n");
 		Leaderboard.sortPlayers();
 		for (Player player : Leaderboard.loadLeaderboard()) {
