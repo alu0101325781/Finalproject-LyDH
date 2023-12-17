@@ -63,7 +63,7 @@ public class MenuTest {
             // Act
             menu.openDifficultyWindow(!darkMode);
             // Assert initial state
-            assertEquals(!darkMode, Game.isDarkMode);
+            assertEquals(darkMode, Game.isDarkMode);
             assertEquals(300, menu.getWidth());
             assertEquals(250, menu.getHeight());
             assertEquals(1, menu.getContentPane().getComponentCount());

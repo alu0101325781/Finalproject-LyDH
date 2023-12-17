@@ -59,7 +59,7 @@ public class ColorScheme {
     /**
      * Initialize the dark colors of the game
      */
-    private void initDarkBackgrounds() {
+     void initDarkBackgrounds() {
         background.put(0, new Color(30, 30, 30, 90));
         background.put(2, new Color(0xC9EEFD)); // Light Sky Blue
         background.put(4, new Color(0x99F1F1)); // Light Blue
