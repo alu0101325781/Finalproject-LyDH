@@ -38,5 +38,22 @@ public class ColorSchemeTest {
         }
     }
 
+    @Test
+    public void testGetTileColor() {
+        if (!GraphicsEnvironment.isHeadless()) {
+            Game.isDarkMode = true;
+            ColorScheme colorScheme = new ColorScheme();
+            Color color = new Color(0x526679);
+            assertTrue(colorScheme.getTileColor(0).equals(color));
+            Game.isDarkMode = false;
+            colorScheme.updateColors();
+            color = new Color(0X776E65);
+            assertTrue(colorScheme.getTileColor(0).equals(color));
+            assertTrue(colorScheme instanceof ColorScheme);
+        } else {
+            System.out.println("Skipping AWT-related test in headless environment.");
+        }
+    }
+
 
 }
