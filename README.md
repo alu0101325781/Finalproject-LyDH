@@ -37,3 +37,6 @@ Nahia Ganuza Izaguirre
 [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=vulnerabilities)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
 [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=alu0101325781_Finalproject-LyDH&metric=bugs)](https://sonarcloud.io/project/overview?id=alu0101325781_Finalproject-LyDH)
 
+## Cricle CI metric
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/alu0101325781/Finalproject-LyDH/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/alu0101325781/Finalproject-LyDH/tree/master)
+
