@@ -18,15 +18,15 @@ jobs:
           command: mvn test
 
       - run:
-          name: Copy XML Reports
-          command: find target/surefire-reports -name "*.xml" -exec cp {} /tmp/artifacts/xml-reports \;
-
-      - store_test_results:
-          path: /tmp/artifacts/xml-reports/
+          name: Copy XML Reports to Artifacts
+          command: find target/surefire-reports -name "*.xml" -exec cp {} /tmp/artifacts \;
 
       - store_artifacts:
-          path: /tmp/artifacts/xml-reports/
+          path: /tmp/artifacts
           destination: test-reports
+
+      - store_test_results:
+          path: /tmp/artifacts/
 
 workflows:
   version: 2
