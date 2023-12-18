@@ -17,16 +17,16 @@ jobs:
           name: Run Tests and Generate XML Reports
           command: mvn test
 
+      - run:
+          name: Copy XML Reports
+          command: find target/surefire-reports -name "*.xml" -exec cp {} /tmp/artifacts/xml-reports \;
+
       - store_test_results:
-          path: target/surefire-reports/  # Ajusta la ruta según la configuración de tu proyecto
+          path: /tmp/artifacts/xml-reports
 
       - store_artifacts:
-          path: target/surefire-reports/  # Almacenar informes de pruebas como artefactos
+          path: /tmp/artifacts/xml-reports
           destination: test-reports
-
-      - store_artifacts:
-          path: /tmp/artifacts
-          destination: other-artifacts
 
 workflows:
   version: 2
