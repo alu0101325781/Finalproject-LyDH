@@ -18,7 +18,7 @@ jobs:
           command: mvn test
 
       - store_test_results:
-          path: target/surefire-reports/*.xml  # Ajusta la ruta según la configuración de tu proyecto
+          path: target/surefire-reports/  # Ajusta la ruta según la configuración de tu proyecto
 
       - store_artifacts:
           path: target/surefire-reports  # Almacenar informes de pruebas como artefactos
