@@ -21,7 +21,7 @@ jobs:
           path: target/surefire-reports/  # Ajusta la ruta según la configuración de tu proyecto
 
       - store_artifacts:
-          path: target/surefire-reports  # Almacenar informes de pruebas como artefactos
+          path: target/surefire-reports/  # Almacenar informes de pruebas como artefactos
           destination: test-reports
 
       - store_artifacts:
