@@ -19,7 +19,7 @@ jobs:
 
       - run:
           name: Copy XML Reports to Artifacts
-          command: cp -R target/surefire-reports/**/*.xml /tmp/artifacts/
+          command: cp -R target/surefire-reports/*.xml /tmp/artifacts/
 
       - store_test_results:
           path: /tmp/artifacts/
