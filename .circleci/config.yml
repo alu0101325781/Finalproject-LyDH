@@ -22,10 +22,10 @@ jobs:
           command: find target/surefire-reports -name "*.xml" -exec cp {} /tmp/artifacts/xml-reports \;
 
       - store_test_results:
-          path: /tmp/artifacts/xml-reports
+          path: /tmp/artifacts/xml-reports/
 
       - store_artifacts:
-          path: /tmp/artifacts/xml-reports
+          path: /tmp/artifacts/xml-reports/
           destination: test-reports
 
 workflows:
