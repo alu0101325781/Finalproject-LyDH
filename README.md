@@ -24,7 +24,8 @@ Víctor Cánovas Del Pino
 
 Nahia Ganuza Izaguirre
 
-![screenshot](screen.png)
+![image](https://github.com/alu0101325781/Finalproject-LyDH/assets/72403326/43e6c766-290f-42cc-a662-8224351b33b3)
+
 
 ## SonarCloud's metrics
 
